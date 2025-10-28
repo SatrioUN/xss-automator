@@ -1,0 +1,77 @@
+debug: true
+
+logging:
+  level: "INFO"
+  file: "./logs/xss_automator.log"
+
+target:
+  base_url: "http://testphp.vulnweb.com"
+  allow_hosts:
+    - "testphp.vulnweb.com"
+  exclude_paths:
+    - "/logout"
+    - "/admin"
+  max_crawl_depth: 5
+
+crawler:
+  max_pages: 300
+  rate_limit_rps: 5
+  max_concurrent_requests: 8
+  respect_robots: false
+  timeout_seconds: 3
+  retries: 2
+  retry_backoff_seconds: 1
+
+request:
+  user_agent: "XSS-Automator/1.0 (+https://github.com/satrioun/)"
+  default_headers:
+    Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
+  timeout_seconds: 2
+  follow_redirects: true
+
+injection:
+  marker_template: "XSS_MARKER_{id}"
+  test_methods:
+    - GET
+    - FORM
+    - POST
+  active_mode_default: false
+  payloads_per_input: 5
+  encode_payloads: false
+  max_injections_per_page: 20
+
+verification:
+  use_playwright: true
+  headless: true
+  timeout_seconds: 2
+  render_wait_ms: 300
+  min_confidence: 70
+  require_dom_exec: true
+
+report:
+  out_dir: "./reports"
+  json: true
+  html: true
+  html_template: "report.html.j2"
+  include_screenshots: true
+  screenshot_dir: "./reports/screenshots"
+  max_reports_keep: 50
+
+telemetry:
+  telegram:
+    bot_token_env: "BOT_TOKEN"
+    allowed_chat_ids:
+      - 6986009354
+      - 6708283917
+    notify_on_find: true
+    notify_on_finish: true
+    notify_debug: false
+    notify_mode: "immediate"
+
+safety:
+  require_telegram_confirm_for_active: true
+  active_confirmation_window_minutes: 1
+
+security:
+  redact_tokens_in_reports: true
+  skip_sensitive_paths: true
